@@ -136,7 +136,7 @@ function Body () {
 export default function SuperPro() {
     return (
         <>
-            <Header user = {location.state.user}/>
+            <Header/>
             <Body/>
             <Footer/>
         </>

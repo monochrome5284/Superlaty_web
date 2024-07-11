@@ -97,11 +97,63 @@ function Body(params){
                                     <button className="button-as-link w-100">
                                         <div className="card">
                                         <div className="img-wrapper ratio ratio-1x1">
-                                            <img src="" className="card-img-top" alt="../images/Superlaty_LOGO.jpg"/>
+                                            <img src="../images/design_10.jpg" className="card-img-top" alt="MemberCard 1"/>
                                         </div>
                                         <div className="card-body">
-                                            <h5 className="card-title">名稱</h5>
-                                            <p className="card-text">類型</p>
+                                            <h5 className="card-title">會員名稱</h5>
+                                            <p className="card-text">會員類別</p>
+                                        </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="carousel-item">
+                                    <button className="button-as-link w-100">
+                                        <div className="card">
+                                        <div className="img-wrapper ratio ratio-1x1">
+                                            <img src="../images/design_3.jpg" className="card-img-top" alt="MemberCard 2"/>
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">會員名稱</h5>
+                                            <p className="card-text">會員類別</p>
+                                        </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="carousel-item">
+                                    <button className="button-as-link w-100">
+                                        <div className="card">
+                                        <div className="img-wrapper ratio ratio-1x1">
+                                            <img src="../images/design_1.jpg" className="card-img-top" alt="MemberCard 3"/>
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">會員名稱</h5>
+                                            <p className="card-text">會員類別</p>
+                                        </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="carousel-item">
+                                    <button className="button-as-link w-100">
+                                        <div className="card">
+                                        <div className="img-wrapper ratio ratio-1x1">
+                                            <img src="../images/design_8.jpg" className="card-img-top" alt="MemberCard 4"/>
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">會員名稱</h5>
+                                            <p className="card-text">會員類別</p>
+                                        </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="carousel-item">
+                                    <button className="button-as-link w-100">
+                                        <div className="card">
+                                        <div className="img-wrapper ratio ratio-1x1">
+                                            <img src="../images/design_6.jpg" className="card-img-top" alt="MemberCard 5"/>
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">會員名稱</h5>
+                                            <p className="card-text">會員類別</p>
                                         </div>
                                         </div>
                                     </button>
@@ -126,11 +178,63 @@ function Body(params){
                                     <button className="button-as-link w-100">
                                         <div className="card">
                                         <div className="img-wrapper ratio ratio-1x1">
-                                            <img src="" className="card-img-top" alt="../images/Superlaty_LOGO.jpg"/>
+                                            <img src="../images/design_7.jpg" className="card-img-top" alt="Certificate 1"/>
                                         </div>
                                         <div className="card-body">
-                                            <h5 className="card-title">名稱</h5>
-                                            <p className="card-text">類別</p>
+                                            <h5 className="card-title">憑證名稱</h5>
+                                            <p className="card-text">憑證類別</p>
+                                        </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="carousel-item">
+                                    <button className="button-as-link w-100">
+                                        <div className="card">
+                                        <div className="img-wrapper ratio ratio-1x1">
+                                            <img src="../images/design_9.jpg" className="card-img-top" alt="Certificate 2"/>
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">憑證名稱</h5>
+                                            <p className="card-text">憑證類別</p>
+                                        </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="carousel-item">
+                                    <button className="button-as-link w-100">
+                                        <div className="card">
+                                        <div className="img-wrapper ratio ratio-1x1">
+                                            <img src="../images/design_4.jpg" className="card-img-top" alt="Certificate 3"/>
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">憑證名稱</h5>
+                                            <p className="card-text">憑證類別</p>
+                                        </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="carousel-item">
+                                    <button className="button-as-link w-100">
+                                        <div className="card">
+                                        <div className="img-wrapper ratio ratio-1x1">
+                                            <img src="../images/design_5.jpg" className="card-img-top" alt="Certificate 4"/>
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">憑證名稱</h5>
+                                            <p className="card-text">憑證類別</p>
+                                        </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="carousel-item">
+                                    <button className="button-as-link w-100">
+                                        <div className="card">
+                                        <div className="img-wrapper ratio ratio-1x1">
+                                            <img src="../images/design_2.jpg" className="card-img-top" alt="Certificate 5"/>
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title">憑證名稱</h5>
+                                            <p className="card-text">憑證類別</p>
                                         </div>
                                         </div>
                                     </button>
