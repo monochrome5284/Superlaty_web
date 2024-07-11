@@ -33,12 +33,15 @@ import './scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './scss/components/particles.jsx';
 
+import Test from './Test.jsx';
+
 // App component
 export default function AppRouter() {
   return (
       <Router>
         <Routes>
           <Route path='*' element={<Navigate to='/' />} />
+          <Route element={<Test/>} path={'/test'}></Route>
           <Route element={<PreLogin/>} path={'/'}></Route>
           <Route element={<Login/>} path={'/login'}></Route>
           <Route element={<HomePage/>} path={'/home'}></Route>
