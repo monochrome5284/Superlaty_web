@@ -15,14 +15,14 @@ function Body(params){
                         <div className="row g-0 h-100">
                             <div className="col-4 align-content-center p-2">
                                 <div className="img-wrapper ratio ratio-1x1">
-                                    <img src="" className="rounded" alt="..."/>
+                                    <img src="../images/design_7.jpg" className="rounded" alt="brand image"/>
                                 </div>
                             </div>
                             <div className="col-8 p-2">
                                 <div className="card-body d-flex flex-column h-100 pb-0">
-                                    <h4 className="card-title mb-0">名稱</h4>
+                                    <h4 className="card-title mb-0">品牌名稱</h4>
                                     <p className="card-text flex-grow-1 my-2">
-                                        敘述
+                                        品牌介紹敘述品牌介紹敘述品牌介紹敘述品牌介紹敘述
                                     </p>
                                     <button className="btn border-0 rounded-0 d-flex align-items-center gap-1 text-secondary hover-fill-icon fw-bolder align-self-end lh-1 pe-0">
                                         <span className="material-symbols-outlined fs-3">bookmark_add</span>

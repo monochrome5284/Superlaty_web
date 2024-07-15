@@ -40,7 +40,20 @@ function Body(params){
         </div>
 
         <div id="offChainCarousel" className="carousel border-bottom mt-5">
-          <h2>未發布</h2>
+          <div className="row justify-content-center gy-3 ps-3 mb-3">
+            <form className="col-sm-6 order-sm-2 col-10">
+                <input className="form-control search-bg-img border-primary rounded-pill bg-color-none m-1 ps-5" type="search" aria-label="Search" list="datalistOptions" id="exampleDataList" placeholder="搜尋設計..."/>
+                <datalist id="datalistOptions">
+                    <option value="設計名稱 1"/>
+                    <option value="設計名稱 2"/>
+                    <option value="設計名稱 3"/>
+                    <option value="設計名稱 4"/>
+                    <option value="設計名稱 5"/>
+                    <option value="......"/>
+                </datalist>
+            </form>
+            <h2 className="col-sm-6 order-sm-1 align-self-center mb-0">未發佈</h2>
+          </div>
           <div className="carousel-inner" role="listbox">
             <div className="carousel-item">
               <button className="button-as-link w-100">
@@ -171,7 +184,20 @@ function Body(params){
         </div>
       </div>
       <div id="certificateCarousel" className="carousel border-bottom mt-5">
-          <h2 className="ps-3">憑證</h2>
+          <div className="row justify-content-center gy-3 ps-3 mb-3">
+            <form className="col-sm-6 order-sm-2 col-10">
+                <input className="form-control search-bg-img border-primary rounded-pill bg-color-none m-1 ps-5" type="search" aria-label="Search" list="datalistOptions" id="exampleDataList" placeholder="搜尋憑證..."/>
+                <datalist id="datalistOptions">
+                    <option value="憑證名稱 1"/>
+                    <option value="憑證名稱 2"/>
+                    <option value="憑證名稱 3"/>
+                    <option value="憑證名稱 4"/>
+                    <option value="憑證名稱 5"/>
+                    <option value="......"/>
+                </datalist>
+            </form>
+            <h2 className="col-sm-6 order-sm-1 align-self-center mb-0">憑證</h2>
+          </div>
           <div className="carousel-inner" role="listbox">       
               <div className="carousel-item">
                   <button className="button-as-link w-100">
