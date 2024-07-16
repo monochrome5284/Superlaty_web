@@ -3,13 +3,13 @@ import {Link, useNavigate} from 'react-router-dom';
 
 function Header(params) {
     let navigate = useNavigate();
-
+    let base = import.meta.env.VITE_BASE_URL || "../";
     return (
     <>
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top bg-primary fs-5">
             <div className="container-fluid">
                 <Link to="/home" className="navbar-brand font-family-OleoScript d-inline-flex align-items-center me-5">
-                    <img src="../images/Superlaty_LOGO.jpg" alt="" width="48" height="48" className="d-inline-block align-text-top"></img>
+                    <img src={base + "images/Superlaty_LOGO.jpg"} alt="" width="48" height="48" className="d-inline-block align-text-top"></img>
                     Superlaty
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -18,7 +18,7 @@ function Header(params) {
                 <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div className="offcanvas-header">
                         <button className="button-as-link black-background" data-bs-toggle="modal" data-bs-target="#accountModal">
-                            <img src={params.user&&params.user.avatar?params.user.avatar:"../images/account_photo.jpg"} alt="" width="48" height="48" className="img-circle d-inline-block align-text-top" />
+                            <img src={params.user&&params.user.avatar?params.user.avatar:base + "images/account_photo.jpg"} alt="" width="48" height="48" className="img-circle d-inline-block align-text-top" />
                         </button>
                         <button type="button" className="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
@@ -88,7 +88,7 @@ function Header(params) {
                     <span className="d-xl-block d-none">升級至</span>SuperPRO 💎
                 </Link>
                 <button className="me-5 d-none d-lg-block button-as-link black-backgroun"  data-bs-toggle="modal" data-bs-target="#accountModal">
-                    <img src={params.user&&params.user.avatar?params.user.avatar:"../images/account_photo.jpg"} alt="" width="48" height="48" className="img-circle d-inline-block align-text-top" />
+                    <img src={params.user&&params.user.avatar?params.user.avatar:base + "images/account_photo.jpg"} alt="" width="48" height="48" className="img-circle d-inline-block align-text-top" />
                 </button>
             </div>
         </nav>

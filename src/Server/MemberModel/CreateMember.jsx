@@ -6,6 +6,7 @@ import UpgradeLevel from '../UpgradeLevel';
 
 function Body () {
     let navigate = useNavigate();
+    let base = import.meta.env.VITE_BASE_URL || "../";
     return (
         <div className="container-fluid bg-blue-gradient" style={{marginTop:"68px"}}>
             <div className="container">
@@ -32,7 +33,7 @@ function Body () {
                                 <Link to="/createNormalMember">
                                     <div className="card">
                                         <div className="row g-0">
-                                        <div className="col-md-4 bg-img-cover rounded text-center" style={{backgroundImage: "url('../images/member_img1.jpg')"}}>
+                                        <div className="col-md-4 bg-img-cover rounded text-center" style={{backgroundImage: `url('${base}images/member_img1.jpg')`}}>
                                             <div className="position-relative" style={{height: "100%", minHeight: "150px"}}>
                                                 <h2 className="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
                                                     <span className="d-inline-block">普通</span><span className="d-inline-block">會員</span>
@@ -60,7 +61,7 @@ function Body () {
                                 <Link to="/createTieredMember" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
                                     <div className="card">
                                         <div className="row g-0">
-                                        <div className="col-md-4 bg-img-cover rounded text-center" style={{backgroundImage: "url('../images/member_img2.jpg')"}}>
+                                        <div className="col-md-4 bg-img-cover rounded text-center" style={{backgroundImage: `url('${base}images/member_img2.jpg')`}}>
                                             <div className="position-relative" style={{height: "100%", minHeight: "150px"}}>
                                                 <h2 className="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
                                                     <span className="d-inline-block">💎</span>
@@ -89,7 +90,7 @@ function Body () {
                                 <Link to="/createPaidMember" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
                                     <div className="card">
                                         <div className="row g-0">
-                                        <div className="col-md-4 bg-img-cover rounded text-center" style={{backgroundImage: "url('../images/member_img3.jpg')"}}>
+                                        <div className="col-md-4 bg-img-cover rounded text-center" style={{backgroundImage: `url('${base}images/member_img3.jpg')`}}>
                                             <div className="position-relative" style={{height: "100%", minHeight: "150px"}}>
                                                 <h2 className="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
                                                     <span className="d-inline-block">💎</span>
@@ -118,7 +119,7 @@ function Body () {
                                 <Link to="/createVVVIPMember" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
                                     <div className="card">
                                         <div className="row g-0">
-                                        <div className="col-md-4 bg-img-cover rounded text-center" style={{backgroundImage: "url('../images/member_img4.jpg')"}}>
+                                        <div className="col-md-4 bg-img-cover rounded text-center" style={{backgroundImage: `url('${base}images/member_img4.jpg')`}}>
                                             <div className="position-relative" style={{height: "100%", minHeight: "150px"}}>
                                                 <h2 className="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold"> 
                                                     <span className="d-block">💎</span>

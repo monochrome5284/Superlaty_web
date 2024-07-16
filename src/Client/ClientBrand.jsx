@@ -6,7 +6,7 @@ import {useNavigate, Link} from 'react-router-dom';
 
 function Body(){
     let navigate = useNavigate();
-
+    let base = import.meta.env.VITE_BASE_URL || "../";
     return(
         <>
             <div className="pt-5" style={{marginTop: '68px'}}>
@@ -17,7 +17,7 @@ function Body(){
                                 <div className="row g-2">
                                     <div className="col-sm-2 col-3 align-content-center">
                                         <div className="img-wrapper ratio ratio-1x1">
-                                            <img src="../images/design_7.jpg" className="rounded" alt="Membership Card(Raccoon Club) Image"/>
+                                            <img src={base + "images/design_7.jpg"} className="rounded" alt="Membership Card(Raccoon Club) Image"/>
                                         </div>
                                     </div>
                                     <div className="col-sm-10 col-9">
@@ -42,7 +42,7 @@ function Body(){
                                     <div className="row g-0 h-100">
                                         <div className="col-4 align-content-center p-2">
                                             <div className="img-wrapper ratio ratio-1x1">
-                                                <img src="../images/design_12.jpg" className="rounded" alt="Membership Card(科技鴨嘴獸) Image"/>
+                                                <img src={base + "images/design_12.jpg"} className="rounded" alt="Membership Card(科技鴨嘴獸) Image"/>
                                             </div>
                                         </div>
                                         <div className="col-8 p-2">
@@ -67,7 +67,7 @@ function Body(){
                                     <div className="row g-0 h-100">
                                         <div className="col-4 align-content-center p-2">
                                             <div className="img-wrapper ratio ratio-1x1">
-                                                <img src="../images/design_11.jpg" className="rounded" alt="Membership Card(科技鴨嘴獸) Image"/>
+                                                <img src={base + "images/design_11.jpg"} className="rounded" alt="Membership Card(科技鴨嘴獸) Image"/>
                                             </div>
                                         </div>
                                         <div className="col-8 p-2">
@@ -220,7 +220,7 @@ function Body(){
                                     <div className="row g-0">
                                         <div className="col-4 align-content-center p-2">
                                             <div className="img-wrapper ratio ratio-1x1">
-                                                <img src="../images/design_12.jpg" className="rounded" alt="Certificate(鴨嘴獸飛行點數) Image"/>
+                                                <img src={base + "images/design_12.jpg"} className="rounded" alt="Certificate(鴨嘴獸飛行點數) Image"/>
                                             </div>
                                         </div>
                                         <div className="col-8 p-2">
@@ -252,7 +252,7 @@ function Body(){
                                     <div className="row g-0">
                                         <div className="col-4 align-content-center p-2">
                                             <div className="img-wrapper ratio ratio-1x1">
-                                                <img src="../images/design_14.jpg" className="rounded" alt="Certificate(鴨嘴獸飛行體驗券) Image"/>
+                                                <img src={base + "images/design_14.jpg"} className="rounded" alt="Certificate(鴨嘴獸飛行體驗券) Image"/>
                                             </div>
                                         </div>
                                         <div className="col-8 p-2">
@@ -471,7 +471,7 @@ function Body(){
                                         <div className="row g-0 h-100">
                                             <div className="col-4 align-content-center p-2">
                                                 <div className="img-wrapper ratio ratio-1x1">
-                                                    <img src="../images/design_10.jpg" className="rounded" alt="Certificate(鴨嘴獸區塊鏈連動) Image"/>
+                                                    <img src={base + "images/design_10.jpg"} className="rounded" alt="Certificate(鴨嘴獸區塊鏈連動) Image"/>
                                                 </div>
                                             </div>
                                             <div className="col-8 p-2">

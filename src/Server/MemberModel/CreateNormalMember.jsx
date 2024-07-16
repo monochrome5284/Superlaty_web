@@ -10,6 +10,7 @@ function Body() {
 
     let navigate = useNavigate();
     let path = '/design';
+    let base = import.meta.env.VITE_BASE_URL || "../";
 
     const { handleSubmit } = useForm();
     let [uploadedFileURL, setUploadedFileURL] = useState(null);
@@ -65,7 +66,7 @@ function Body() {
                     <div className="col-lg-6 d-flex justify-content-center align-items-center mb-3">
                         <div>
                             <label htmlFor="image-upload" className="ratio ratio-1x1">
-                                <div className="profile-image" style={{backgroundImage: `url(${uploadedFileURL??"../images/member_img3.jpg"})`}}>
+                                <div className="profile-image" style={{backgroundImage: `url(${uploadedFileURL??base + "images/member_img3.jpg"})`}}>
                                     {!uploadedFileURL &&<span className="material-symbols-outlined">image</span>}
                                 </div>
                             </label>
@@ -110,17 +111,17 @@ function Body() {
                                 <ul className="dropdown-menu dropdown-menu-end">
                                     <li>
                                         <button className="dropdown-item">
-                                            <img src="../assets/images/tether-usdt-logo.svg" alt="Option 3" className="me-2" width="24" height="24"/> USDT
+                                            <img src={base + "images/tether-usdt-logo.svg"} alt="Option 3" className="me-2" width="24" height="24"/> USDT
                                         </button>
                                     </li>
                                     <li>
                                         <button className="dropdown-item">
-                                            <img src="../assets/images/ethereum-eth-logo.svg" alt="Option 3" className="me-2" width="24" height="24"/> ETH
+                                            <img src={base + "images/ethereum-eth-logo.svg"} alt="Option 3" className="me-2" width="24" height="24"/> ETH
                                         </button>
                                     </li>
                                     <li>
                                         <button className="dropdown-item">
-                                            <img src="../assets/images/bitcoin-btc-logo.svg" alt="Option 3" className="me-2" width="24" height="24"/> BTC
+                                            <img src={base + "images/bitcoin-btc-logo.svg"} alt="Option 3" className="me-2" width="24" height="24"/> BTC
                                         </button>
                                     </li>
                                 </ul>

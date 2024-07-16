@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate, Link, useLocation } from 'react-router-dom';
 import ParticleComponent from './scss/components/particles';
 
+let base = import.meta.env.VITE_BASE_URL || "../";
+
 function Common(state){
   let navigate = useNavigate();
 
@@ -20,7 +22,7 @@ function Common(state){
         <ul className="list-group list-group-flush">
           <li className="list-group-item border-0 py-0">
             <button className="d-inline-block bg-light rounded w-100 p-2 ps-3 mb-2 text-star text-decoration-none button-as-link text-start" onClick={() => { Direct(); }}>
-              <img src="../images/WalletConnect-icon.svg" alt="WalletConnect" className="me-2" width="24" />
+              <img src={base + "images/WalletConnect-icon.svg"} alt="WalletConnect" className="me-2" width="24" />
               <span>WalletConnect</span>
             </button>
           </li>
@@ -34,7 +36,7 @@ export default function Login() {
   let location = useLocation();
   if(location.state === "server"){
     return (
-      <div className="comtainer-fluid d-flex flex-column justify-content-center align-items-center position-relative bg-img-cover bg-image-animation-bottomToTop" style={{ backgroundImage: "url(../images/logIn-background-img.jpg)", height: "100vh" }}>
+      <div className="comtainer-fluid d-flex flex-column justify-content-center align-items-center position-relative bg-img-cover bg-image-animation-bottomToTop" style={{ backgroundImage: `url(${base}images/logIn-background-img.jpg)`, height: "100vh" }}>
         <div className="position-absolute top-0 start-0 ms-5 mt-3">
           <h1 className="font-family-OleoScript display-1 text-white">Superlaty</h1>
         </div>

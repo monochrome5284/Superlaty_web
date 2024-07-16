@@ -3,13 +3,13 @@ import {Link, useNavigate} from 'react-router-dom';
 
 function ClientHeader(params) {
     let navigate = useNavigate();
-
+    let base = import.meta.env.VITE_BASE_URL || "../";
     return (
     <>
       <nav className ="navbar navbar-light bg-light navbar-expand-lg fixed-top fs-5 shadow-lg">
       <div className ="container-fluid">
           <Link to ="/clientHome" className ="navbar-brand font-family-OleoScript d-inline-flex align-items-center gap-2 me-5" >
-              <img src="../images/Superlaty_LOGO.jpg" alt="" width="48" height="48" className ="d-inline-block align-text-top img-circle"/>
+              <img src={base + "images/Superlaty_LOGO.jpg"} alt="" width="48" height="48" className ="d-inline-block align-text-top img-circle"/>
               Superlaty
           </Link>
           <button className ="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -18,7 +18,7 @@ function ClientHeader(params) {
           <div className ="offcanvas offcanvas-end bg-light text-light" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div className ="offcanvas-header">
                   <button className="button-as-link" data-bs-toggle="modal" data-bs-target="#accountModal">
-                      <img src="../images/account_photo.jpg" alt="" width="48" height="48" className ="img-circle d-inline-block align-text-top"/>
+                      <img src={base + "images/account_photo.jpg"} alt="" width="48" height="48" className ="img-circle d-inline-block align-text-top"/>
                   </button>
                   <button type="button" className ="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
@@ -58,7 +58,7 @@ function ClientHeader(params) {
               </div>
           </div>
           <Link to ="#" className ="me-5 d-none d-lg-block"  data-bs-toggle="modal" data-bs-target="#accountModal">
-              <img src="../images/account_photo.jpg" alt="" width="48" height="48" className ="img-circle d-inline-block align-text-top"/>
+              <img src={base + "images/account_photo.jpg"} alt="" width="48" height="48" className ="img-circle d-inline-block align-text-top"/>
           </Link>
       </div>
       </nav>

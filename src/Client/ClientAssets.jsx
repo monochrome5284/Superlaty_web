@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Body(params){
     const brand = useRef(null);
+    let base = import.meta.env.VITE_BASE_URL || "../";
 
     function GetBrandTypeCard(){
         let uiItem = [];
@@ -15,7 +16,7 @@ function Body(params){
                         <div className="row g-0 h-100">
                             <div className="col-4 align-content-center p-2">
                                 <div className="img-wrapper ratio ratio-1x1">
-                                    <img src="../images/design_7.jpg" className="rounded" alt="brand image"/>
+                                    <img src={base + "images/design_7.jpg"} className="rounded" alt="brand image"/>
                                 </div>
                             </div>
                             <div className="col-8 p-2">
@@ -113,7 +114,7 @@ function Body(params){
                                         <div className="row g-0">
                                             <div className="col-4 align-content-center p-2">
                                                 <div className="img-wrapper ratio ratio-1x1">
-                                                    <img src="../images/design_1.jpg" className="rounded" alt="Membership Card(Raccoon Club) Image"/>
+                                                    <img src={base + "images/design_1.jpg"} className="rounded" alt="Membership Card(Raccoon Club) Image"/>
                                                 </div>
                                             </div>
                                             <div className="col-8 p-2">
@@ -147,7 +148,7 @@ function Body(params){
                                         <div className="row g-0">
                                             <div className="col-4 align-content-center p-2">
                                                 <div className="img-wrapper ratio ratio-1x1">
-                                                    <img src="../images/design_6.jpg" className="rounded" alt="Membership Card(YOASOBI 粉絲群) Image"/>
+                                                    <img src={base + "images/design_6.jpg"} className="rounded" alt="Membership Card(YOASOBI 粉絲群) Image"/>
                                                 </div>
                                             </div>
                                             <div className="col-8 p-2">
@@ -180,7 +181,7 @@ function Body(params){
                                         <div className="row g-0">
                                             <div className="col-4 align-content-center p-2">
                                                 <div className="img-wrapper ratio ratio-1x1">
-                                                    <img src="../images/design_8.jpg" className="rounded" alt="Membership Card(露營野炊) Image"/>
+                                                    <img src={base + "images/design_8.jpg"} className="rounded" alt="Membership Card(露營野炊) Image"/>
                                                 </div>
                                             </div>
                                             <div className="col-8 p-2">
@@ -213,7 +214,7 @@ function Body(params){
                                         <div className="row g-0">
                                             <div className="col-4 align-content-center p-2">
                                                 <div className="img-wrapper ratio ratio-1x1">
-                                                    <img src="../images/design_3.jpg" className="rounded" alt="Membership Card(人魚) Image"/>
+                                                    <img src={base + "images/design_3.jpg"} className="rounded" alt="Membership Card(人魚) Image"/>
                                                 </div>
                                             </div>
                                             <div className="col-8 p-2">
@@ -246,7 +247,7 @@ function Body(params){
                                         <div className="row g-0">
                                             <div className="col-4 align-content-center p-2">
                                                 <div className="img-wrapper ratio ratio-1x1">
-                                                    <img src="../images/design_11.jpg" className="rounded" alt="Membership Card(鴨嘴獸俱樂部) Image"/>
+                                                    <img src={base + "images/design_11.jpg"} className="rounded" alt="Membership Card(鴨嘴獸俱樂部) Image"/>
                                                 </div>
                                             </div>
                                             <div className="col-8 p-2">
@@ -358,7 +359,7 @@ function Body(params){
                                     <a>
                                         <div className="card">
                                             <div className="img-wrapper ratio ratio-1x1">
-                                                <img src="../images/tango_LOGO.jpg" className="card-img-top border" alt="brand_image_1"/>
+                                                <img src={base + "images/tango_LOGO.jpg"} className="card-img-top border" alt="brand_image_1"/>
                                             </div>
                                             <div className="card-body text-center px-2">
                                                 <h5 className="card-title text-truncate">TENGO Brands</h5>
@@ -374,7 +375,7 @@ function Body(params){
                                     <a>
                                         <div className="card">
                                             <div className="img-wrapper ratio ratio-1x1">
-                                                <img src="../images/apple_img.jpg" className="card-img-top border" alt="brand_image_2"/>
+                                                <img src={base + "images/apple_img.jpg"} className="card-img-top border" alt="brand_image_2"/>
                                             </div>
                                             <div className="card-body text-center px-2">
                                                 <h5 className="card-title text-truncate">Apple Inc.</h5>
@@ -390,7 +391,7 @@ function Body(params){
                                     <a>
                                         <div className="card">
                                             <div className="img-wrapper ratio ratio-1x1">
-                                                <img src="../images/SCU_LOGO.png" className="card-img-top border" alt="brand_image_3"/>
+                                                <img src={base + "images/SCU_LOGO.png"} className="card-img-top border" alt="brand_image_3"/>
                                             </div>
                                             <div className="card-body text-center px-2">
                                                 <h5 className="card-title text-truncate">SCU Blockchain Research Society</h5>
@@ -406,7 +407,7 @@ function Body(params){
                                     <a>
                                         <div className="card">
                                             <div className="img-wrapper ratio ratio-1x1">
-                                                <img src="../images/design_7.jpg" className="card-img-top border" alt="brand_image_4"/>
+                                                <img src={base + "images/design_7.jpg"} className="card-img-top border" alt="brand_image_4"/>
                                             </div>
                                             <div className="card-body text-center px-2">
                                                 <h5 className="card-title text-truncate">俱樂部限量卡</h5>
@@ -422,7 +423,7 @@ function Body(params){
                                     <a>
                                         <div className="card">
                                             <div className="img-wrapper ratio ratio-1x1">
-                                                <img src="../images/DogeDAO_img.jpg" className="card-img-top border" alt="brand_image_5"/>
+                                                <img src={base + "images/DogeDAO_img.jpg"} className="card-img-top border" alt="brand_image_5"/>
                                             </div>
                                             <div className="card-body text-center px-2">
                                                 <h5 className="card-title text-truncate">DogeDAO</h5>

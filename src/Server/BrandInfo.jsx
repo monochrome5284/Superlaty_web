@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 function Body(params){
     let navigate = useNavigate();
     let location = useLocation();
+    let base = import.meta.env.VITE_BASE_URL || "../";
 
     const { register, handleSubmit, setValue } = useForm();
     axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
@@ -93,7 +94,7 @@ return(
                             <div className ="col d-flex justify-content-center align-items-center">
                                 <div>
                                     <label htmlFor="image-upload" className ="ratio ratio-1x1 mb-2">
-                                        <div className ="profile-image border-0" style={{backgroundImage: `url(${uploadedFileURL??"../images/tango_LOGO.jpg"})`}}>
+                                        <div className ="profile-image border-0" style={{backgroundImage: `url(${uploadedFileURL??base + "images/tango_LOGO.jpg"})`}}>
 
                                         </div>
                                     </label>

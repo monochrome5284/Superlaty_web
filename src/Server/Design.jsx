@@ -16,7 +16,7 @@ const StyledDeleteIconButton = styled(IconButton)(({ theme }) => (
 
 function Body(params){
   let navigate = useNavigate();
-
+  let base = import.meta.env.VITE_BASE_URL || "../";
   return (
     <div className="container-fluid bg-blue-gradient" style={{marginTop:"68px"}}>
       <div className="container py-4">
@@ -59,7 +59,7 @@ function Body(params){
               <button className="button-as-link w-100">
                 <div className="card position-relative">
                   <div className="img-wrapper ratio ratio-1x1">
-                      <img src="../images/design_16.jpg" className="card-img-top" alt="Unreleased design 1"/>
+                      <img src={base + "images/design_16.jpg"} className="card-img-top" alt="Unreleased design 1"/>
                   </div>
                   <div className="card-body">
                       <h5 className="card-title">名稱</h5>
@@ -77,7 +77,7 @@ function Body(params){
               <button className="button-as-link w-100">
                 <div className="card position-relative">
                   <div className="img-wrapper ratio ratio-1x1">
-                      <img src="../images/design_15.jpg" className="card-img-top" alt="Unreleased design 2"/>
+                      <img src={base + "images/design_15.jpg"} className="card-img-top" alt="Unreleased design 2"/>
                   </div>
                   <div className="card-body">
                       <h5 className="card-title">名稱</h5>
@@ -109,7 +109,7 @@ function Body(params){
             <button className="button-as-link w-100">
                 <div className="card">
                 <div className="img-wrapper ratio ratio-1x1">
-                    <img src="../images/design_10.jpg" className="card-img-top" alt="MemberCard 1"/>
+                    <img src={base + "images/design_10.jpg"} className="card-img-top" alt="MemberCard 1"/>
                 </div>
                 <div className="card-body">
                     <h5 className="card-title">會員名稱</h5>
@@ -122,7 +122,7 @@ function Body(params){
             <button className="button-as-link w-100">
                 <div className="card">
                 <div className="img-wrapper ratio ratio-1x1">
-                    <img src="../images/design_3.jpg" className="card-img-top" alt="MemberCard 2"/>
+                    <img src={base + "images/design_3.jpg"} className="card-img-top" alt="MemberCard 2"/>
                 </div>
                 <div className="card-body">
                     <h5 className="card-title">會員名稱</h5>
@@ -135,7 +135,7 @@ function Body(params){
             <button className="button-as-link w-100">
                 <div className="card">
                 <div className="img-wrapper ratio ratio-1x1">
-                    <img src="../images/design_1.jpg" className="card-img-top" alt="MemberCard 3"/>
+                    <img src={base + "images/design_1.jpg"} className="card-img-top" alt="MemberCard 3"/>
                 </div>
                 <div className="card-body">
                     <h5 className="card-title">會員名稱</h5>
@@ -148,7 +148,7 @@ function Body(params){
             <button className="button-as-link w-100">
               <div className="card">
                 <div className="img-wrapper ratio ratio-1x1">
-                  <img src="../images/design_8.jpg" className="card-img-top" alt="MemberCard 4"/>
+                  <img src={base + "images/design_8.jpg"} className="card-img-top" alt="MemberCard 4"/>
                 </div>
                 <div className="card-body">
                   <h5 className="card-title">會員名稱</h5>
@@ -161,7 +161,7 @@ function Body(params){
             <button className="button-as-link w-100">
               <div className="card">
                 <div className="img-wrapper ratio ratio-1x1">
-                  <img src="../images/design_6.jpg" className="card-img-top" alt="MemberCard 5"/>
+                  <img src={base + "images/design_6.jpg"} className="card-img-top" alt="MemberCard 5"/>
                 </div>
                 <div className="card-body">
                   <h5 className="card-title">會員名稱</h5>
@@ -203,7 +203,7 @@ function Body(params){
                   <button className="button-as-link w-100">
                       <div className="card">
                       <div className="img-wrapper ratio ratio-1x1">
-                          <img src="../images/design_7.jpg" className="card-img-top" alt="Certificate 1"/>
+                          <img src={base + "images/design_7.jpg"} className="card-img-top" alt="Certificate 1"/>
                       </div>
                       <div className="card-body">
                           <h5 className="card-title">憑證名稱</h5>
@@ -216,7 +216,7 @@ function Body(params){
                   <button className="button-as-link w-100">
                       <div className="card">
                       <div className="img-wrapper ratio ratio-1x1">
-                          <img src="../images/design_9.jpg" className="card-img-top" alt="Certificate 2"/>
+                          <img src={base + "images/design_9.jpg"} className="card-img-top" alt="Certificate 2"/>
                       </div>
                       <div className="card-body">
                           <h5 className="card-title">憑證名稱</h5>
@@ -229,7 +229,7 @@ function Body(params){
                   <button className="button-as-link w-100">
                       <div className="card">
                       <div className="img-wrapper ratio ratio-1x1">
-                          <img src="../images/design_4.jpg" className="card-img-top" alt="Certificate 3"/>
+                          <img src={base + "images/design_4.jpg"} className="card-img-top" alt="Certificate 3"/>
                       </div>
                       <div className="card-body">
                           <h5 className="card-title">憑證名稱</h5>
@@ -242,7 +242,7 @@ function Body(params){
                   <button className="button-as-link w-100">
                       <div className="card">
                       <div className="img-wrapper ratio ratio-1x1">
-                          <img src="../images/design_5.jpg" className="card-img-top" alt="Certificate 4"/>
+                          <img src={base + "images/design_5.jpg"} className="card-img-top" alt="Certificate 4"/>
                       </div>
                       <div className="card-body">
                           <h5 className="card-title">憑證名稱</h5>
@@ -255,7 +255,7 @@ function Body(params){
                   <button className="button-as-link w-100">
                       <div className="card">
                       <div className="img-wrapper ratio ratio-1x1">
-                          <img src="../images/design_2.jpg" className="card-img-top" alt="Certificate 5"/>
+                          <img src={base + "images/design_2.jpg"} className="card-img-top" alt="Certificate 5"/>
                       </div>
                       <div className="card-body">
                           <h5 className="card-title">憑證名稱</h5>

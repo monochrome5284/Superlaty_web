@@ -15,6 +15,8 @@ function Body(){
     //     return uiItem;
     // }
 
+    let base = import.meta.env.VITE_BASE_URL || "../";
+
     function GetCertificateName(res){
         switch(res.type){
             case 'MembershipPoint':
@@ -50,7 +52,7 @@ function Body(){
                         <h2 className="text-primary text-center fw-bold mb-4">會員卡名稱</h2>
                         <div class="d-flex justify-content-center mb-4">
                             <div class="img-wrapper ratio ratio-1x1 w-50">
-                                <img src="../images/design_11.jpg" className="rounded shadow-sm" alt="會員卡照片"/>
+                                <img src={base + "images/design_11.jpg"} className="rounded shadow-sm" alt="會員卡照片"/>
                             </div>
                         </div>
                         <div className="mb-4"> 
@@ -75,7 +77,7 @@ function Body(){
                             <div className="row g-2">
                                 <div class="col-4 align-content-center">
                                     <div class="img-wrapper ratio ratio-1x1">
-                                        <img src="../images/design_12.jpg" className="rounded" alt="憑證照片"/>
+                                        <img src={base + "images/design_12.jpg"} className="rounded" alt="憑證照片"/>
                                     </div>
                                 </div>
                                 <div className="col-8">
@@ -105,7 +107,7 @@ function Body(){
                             <div className="row g-2">
                                 <div className="col-4 align-content-center">
                                     <div className="img-wrapper ratio ratio-1x1">
-                                        <img src="../images/design_9.jpg" className="rounded" alt="Certificate(Raccoon電子音響) Image"/>
+                                        <img src={base + "images/design_9.jpg"} className="rounded" alt="Certificate(Raccoon電子音響) Image"/>
                                     </div>
                                 </div>
                                 <div className="col-8 h-100">
@@ -135,7 +137,7 @@ function Body(){
                             <div className="row g-2">
                                 <div class="col-4 align-content-center">
                                     <div class="img-wrapper ratio ratio-1x1">
-                                        <img src="../images/design_14.jpg" className="rounded image-grayish" alt="憑證照片"/>
+                                        <img src={base + "images/design_14.jpg"} className="rounded image-grayish" alt="憑證照片"/>
                                     </div>
                                 </div>
                                 <div className="col-8">
@@ -165,7 +167,7 @@ function Body(){
                             <div className="row g-2">
                                 <div class="col-4 align-content-center">
                                     <div class="img-wrapper ratio ratio-1x1">
-                                        <img src="../images/design_15.jpg" className="rounded image-grayish" alt="憑證照片"/>
+                                        <img src={base + "images/design_15.jpg"} className="rounded image-grayish" alt="憑證照片"/>
                                     </div>
                                 </div>
                                 <div className="col-8">

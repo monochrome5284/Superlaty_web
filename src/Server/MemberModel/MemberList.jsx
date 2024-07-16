@@ -4,6 +4,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 
 function Body(params){
+    let base = import.meta.env.VITE_BASE_URL || "../";
     return(
         <>
             <div className = "container-fluid bg-blue-gradient" style={{marginTop: '68px'}}>
@@ -18,7 +19,7 @@ function Body(params){
                 <div className = "row g-0 mb-4">
                     <div className = "col-md-2 col-sm-3 col-4 align-content-center p-2">
                         <div className = "img-wrapper ratio ratio-1x1">
-                            <img src="../images/design_10.jpg" className = "rounded" alt="Brand(DogeDAO) Image"/>
+                            <img src={base + "images/design_10.jpg"} className = "rounded" alt="Brand(DogeDAO) Image"/>
                         </div>
                     </div>
                     <div className = "col-md-10 col-sm-9 col-8 d-flex justify-content-between align-items-start flex-column p-2">
