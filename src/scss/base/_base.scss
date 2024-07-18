@@ -44,6 +44,10 @@ a{
     -webkit-filter: grayscale(100%) brightness(150%) saturate(50%) blur(0.5px); /* Safari */
     filter: grayscale(100%) brightness(150%) contrast(70%) saturate(30%) blur(0.5px);
 }
+a:hover  .image-grayish{
+        -webkit-filter: none;
+        fill: unset;
+}
 
 // 內層陰影
 .section-shadow-inset{
