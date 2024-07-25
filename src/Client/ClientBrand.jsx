@@ -76,8 +76,10 @@ function Body(){
                             <div className="card h-100 border-0 rounded-0 shadow">
                                 <Link to="#" className="text-decoration-none h-100">
                                     <div className="row g-0 h-100">
-                                    <div className="col-4 position-relative align-content-center p-2">
-                                            <img src={base + "images/design_11.jpg"} className="rounded h-100" style={{objectFit: 'cover'}} alt="Membership Card(科技鴨嘴獸) Image"/>
+                                        <div className="col-4 position-relative align-content-center p-2">
+                                            <div className="img-wrapper ratio ratio-1x1">
+                                                <img src={base + "images/design_11.jpg"} className="rounded image-grayish" alt="Membership Card(科技鴨嘴獸) Image"/>
+                                            </div>
                                             <span class="d-sm-inline-block d-none badge bg-primary position-absolute top-0 start-0 m-3">
                                                 <span>持有</span>
                                             </span>
@@ -108,7 +110,9 @@ function Body(){
                                 <Link to="#" className="text-decoration-none h-100">
                                     <div className="row g-0 h-100">
                                         <div className="col-4 position-relative align-content-center p-2">
-                                            <img src={base + "images/design_13.jpg"} className="image-grayish rounded h-100" style={{objectFit: 'cover'}} alt="Membership Card(科技鴨嘴獸) Image"/>
+                                            <div className="img-wrapper ratio ratio-1x1">
+                                                <img src={base + "images/design_13.jpg"} className="rounded image-grayish" alt="Membership Card(遊戲boy鴨嘴獸) Image"/>
+                                            </div>
                                             <span class="d-sm-inline-block d-none badge bg-light text-dark position-absolute top-0 start-0 m-3">
                                                 <span>未領取</span>
                                             </span>
@@ -162,7 +166,7 @@ function Body(){
                                                 <p className="card-text flex-grow-1 my-2">
                                                     會員卡介紹敘述會員卡介紹敘述會員卡介紹敘述 <br />
                                                 </p>
-                                                <span><small>領取日期:<span className='d-sm-inline-block d-none'>YYYY/</span>MM/DD</small></span>
+                                                <span><small>領取時間:<span className='d-sm-inline-block d-none'>YYYY/</span>MM/DD</small></span>
                                             </div>
                                         </div>
                                     </div>
@@ -193,7 +197,7 @@ function Body(){
                                                 <p className="card-text flex-grow-1 my-2">
                                                     會員卡介紹敘述會員卡介紹敘述會員卡介紹敘述 <br />
                                                 </p>
-                                                <span><small>領取日期:<span className='d-sm-inline-block d-none'>YYYY/</span>MM/DD</small></span>
+                                                <span><small>領取時間:<span className='d-sm-inline-block d-none'>YYYY/</span>MM/DD</small></span>
                                             </div>
                                         </div>
                                     </div>
@@ -291,7 +295,7 @@ function Body(){
                                     alignItems="center"
                                     spacing={1}>
                                     <Chip label="持有" variant="filled" size='small' onClick={()=>{myfunction()}} onDelete={()=>{myfunction()}} />
-                                    <Chip label="持有" variant="filled" size='small' onClick={()=>{myfunction()}} onDelete={()=>{myfunction()}} />
+                                    <Chip label="已使用" variant="filled" size='small' onClick={()=>{myfunction()}} onDelete={()=>{myfunction()}} />
                                     <Chip label="已失效" variant="outlined" size='small' onClick={()=>{myfunction()}} />
                                 </Stack>
                             </form>
@@ -300,30 +304,30 @@ function Body(){
                     <div className="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-3 mb-5">
                         <div className="col">
                             <div className="card h-100 border-0 shadow">
-                                <Link to ="#" className="text-decoration-none" data-bs-toggle="modal" data-bs-target="#CertificateModal">
-                                    <div className="row g-0">
+                                <Link to ="#" className="text-decoration-none h-100" data-bs-toggle="modal" data-bs-target="#CertificateModal">
+                                    <div className="row g-0 h-100">
                                         <div className="col-4 align-content-center p-2">
-                                            <img src={base + "images/design_12.jpg"} className="rounded h-100" style={{objectFit: 'cover'}} alt="Certificate(鴨嘴獸飛行點數) Image"/>
+                                            <div className="img-wrapper ratio ratio-1x1">
+                                                <img src={base + "images/design_12.jpg"} className="rounded image-grayish" alt="Certificate(鴨嘴獸飛行點數) Image"/>
+                                            </div>
                                         </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <h4 className="card-title text-dark mb-1">鴨嘴獸飛行點數
-                                                </h4>
-                                                <div className="d-flex justify-content-between flex-wrap">
-                                                    <span className="d-flex align-items-center">
-                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                        科技鴨嘴獸
-                                                    </span>
-                                                    <GetCertificateName type="MembershipPoint"/>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    憑證介紹敘述憑證介紹敘述 <br />
-                                                    憑證介紹敘述憑證介紹敘述憑證介紹敘述 <br />
-                                                </p>
-                                                <div className="d-flex justify-content-between align-items-end">
-                                                    <span className="card-text"><small className="text-danger">期限:YYYY/MM/DD</small></span>
-                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                </div>
+                                        <div className="col-8 align-content-center p-2">
+                                            <h4 className="card-title text-dark mb-1">鴨嘴獸飛行點數
+                                            </h4>
+                                            <div className="d-flex justify-content-between flex-wrap">
+                                                <span className="d-flex align-items-center">
+                                                    <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                    科技鴨嘴獸
+                                                </span>
+                                                <GetCertificateName type="MembershipPoint"/>
+                                            </div>
+                                            <p className="card-text my-2">
+                                                憑證介紹敘述憑證介紹敘述 <br />
+                                                憑證介紹敘述憑證介紹敘述憑證介紹敘述 <br />
+                                            </p>
+                                            <div className="d-flex justify-content-between align-items-end">
+                                                <span className="card-text"><small className="text-danger">期限:<span className='d-sm-inline-block d-none'>YYYY/</span>MM/DD</small></span>
+                                                <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
                                             </div>
                                         </div>
                                     </div>
@@ -333,105 +337,35 @@ function Body(){
                         <div className="col">
                             <div className="card h-100 border-0 shadow">
                                 <Link to ="#" className="text-decoration-none h-100" data-bs-toggle="modal" data-bs-target="#CertificateModal_demo">
-                                    <div className="row g-0">
-                                        <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
-                                                <span className="text-white fs-3">預設圖片</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <h4 className="card-title text-dark d-flex justify-content-between align-items-center text-truncate mb-1">憑證名稱
-                                                </h4>
-                                                <div className="d-flex justify-content-between flex-wrap">
-                                                    <span className="d-flex align-items-center">
-                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                        會員卡名稱
-                                                    </span>
-                                                    <span className="d-inline-flex align-items-center badge rounded-pill bg-primary">
-                                                        <span className="material-symbols-outlined fill-icon fs-6">crop_square</span>
-                                                        ﹡﹡
-                                                    </span>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明說明憑證說明...
-                                                </p>
-                                                <div className="d-flex justify-content-between align-items-end">
-                                                    <span className="card-text"><small className="text-danger">期限：﹡﹡/﹡﹡</small></span>
-                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card h-100 border-0 shadow">
-                                <Link to ="#" className="text-decoration-none h-100">
-                                    <div className="row g-0">
-                                        <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
-                                                <span className="text-white fs-3">預設圖片</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <h4 className="card-title text-dark d-flex justify-content-between align-items-center text-truncate mb-1">憑證名稱
-                                                </h4>
-                                                <div className="d-flex justify-content-between flex-wrap">
-                                                    <span className="d-flex align-items-center">
-                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                        會員卡名稱
-                                                    </span>
-                                                    <span className="d-inline-flex align-items-center badge rounded-pill bg-primary">
-                                                        <span className="material-symbols-outlined fill-icon fs-6">crop_square</span>
-                                                        ﹡﹡
-                                                    </span>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明說明憑證說明...
-                                                </p>
-                                                <div className="d-flex justify-content-between align-items-end">
-                                                    <span className="card-text"><small className="text-danger">期限：﹡﹡/﹡﹡</small></span>
-                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card h-100 border-0 shadow">
-                                <Link to ="#" className="text-decoration-none">
-                                    <div className="row g-0">
+                                    <div className="row g-0 h-100">
                                         <div className="col-4 align-content-center p-2">
-                                            <img src={base + "images/design_14.jpg"} className="image-grayish rounded h-100" style={{objectFit: 'cover'}} alt="Certificate(鴨嘴獸飛行點數) Image"/>
+                                            <div className="ratio ratio-1x1">
+                                                <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
+                                                    <span className="text-white fs-3">預設圖片</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <h4 className="card-title text-dark d-flex justify-content-between align-items-center mb-1">鴨嘴獸飛行體驗券
-                                                </h4>
-                                                <div className="d-flex justify-content-between flex-wrap">
-                                                    <span className="d-flex align-items-center">
-                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                        科技鴨嘴獸
-                                                    </span>
-                                                    <GetCertificateName type="Ticket"/>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    憑證介紹敘述憑證介紹敘述 <br />
-                                                    憑證介紹敘述憑證介紹敘述憑證介紹敘述 <br />
-                                                </p>
-                                                <div className="d-flex justify-content-between align-items-end">
-                                                    <span className="card-text"><small className="text-info fw-bolder">已使用</small></span>
-                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                </div>
+                                        <div className="col-8 align-content-center p-2">
+                                            <h4 className="card-title text-dark d-flex justify-content-between align-items-center text-truncate mb-1">憑證名稱
+                                            </h4>
+                                            <div className="d-flex justify-content-between flex-wrap">
+                                                <span className="d-flex align-items-center">
+                                                    <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                    會員卡名稱
+                                                </span>
+                                                <span className="d-inline-flex align-items-center badge rounded-pill bg-primary">
+                                                    <span className="material-symbols-outlined fill-icon fs-6">crop_square</span>
+                                                    ﹡﹡
+                                                </span>
+                                            </div>
+                                            <p className="card-text my-2">
+                                                憑證說明憑證說明憑證<br/>
+                                                憑證說明憑證說明憑證<br/>
+                                                憑證說明說明憑證說明...
+                                            </p>
+                                            <div className="d-flex justify-content-between align-items-end">
+                                                <span className="card-text"><small className="text-danger">期限：﹡﹡/﹡﹡</small></span>
+                                                <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
                                             </div>
                                         </div>
                                     </div>
@@ -441,105 +375,29 @@ function Body(){
                         <div className="col">
                             <div className="card h-100 border-0 shadow">
                                 <Link to ="#" className="text-decoration-none h-100">
-                                    <div className="row g-0">
-                                        <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
-                                                <span className="text-white fs-3">預設圖片</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <h4 className="card-title text-dark d-flex justify-content-between align-items-center text-truncate mb-1">憑證名稱
-                                                </h4>
-                                                <div className="d-flex justify-content-between flex-wrap">
-                                                    <span className="d-flex align-items-center">
-                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                        會員卡名稱
-                                                    </span>
-                                                    <span className="d-inline-flex align-items-center badge rounded-pill bg-primary">
-                                                        <span className="material-symbols-outlined fill-icon fs-6">crop_square</span>
-                                                        ﹡﹡
-                                                    </span>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明說明憑證說明...
-                                                </p>
-                                                <div className="d-flex justify-content-between align-items-end">
-                                                    <span className="card-text"><small className="text-info fw-bolder">已使用</small></span>
-                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card h-100 border-0 shadow">
-                                <Link to ="#" className="text-decoration-none h-100">
-                                    <div className="row g-0">
-                                        <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
-                                                <span className="text-white fs-3">預設圖片</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <h4 className="card-title text-dark d-flex justify-content-between align-items-center text-truncate mb-1">憑證名稱
-                                                </h4>
-                                                <div className="d-flex justify-content-between flex-wrap">
-                                                    <span className="d-flex align-items-center">
-                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                        會員卡名稱
-                                                    </span>
-                                                    <span className="d-inline-flex align-items-center badge rounded-pill bg-primary">
-                                                        <span className="material-symbols-outlined fill-icon fs-6">crop_square</span>
-                                                        ﹡﹡
-                                                    </span>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明說明憑證說明...
-                                                </p>
-                                                <div className="d-flex justify-content-between align-items-end">
-                                                    <span className="card-text"><small className="text-info fw-bolder">已使用</small></span>
-                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card h-100 border-0 shadow">
-                                <Link to ="#" className="text-decoration-none h-100">
-                                    <div className="row g-0">
+                                    <div className="row g-0 h-100">
                                         <div className="col-4 align-content-center p-2">
-                                            <img src={base + "images/design_9.jpg"} className="image-grayish rounded h-100" style={{objectFit: 'cover'}} alt="Certificate(鴨嘴獸電子音響) Image"/>
+                                            <div className="img-wrapper ratio ratio-1x1">
+                                                <img src={base + "images/design_14.jpg"} className="rounded image-grayish" alt="Certificate(鴨嘴獸飛行體驗券) Image"/>
+                                            </div>
                                         </div>
-                                        <div className="col-8 h-100 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <h4 className="card-title text-dark mb-1">鴨嘴獸電子音響 
-                                                </h4>
-                                                <div className="d-flex justify-content-between flex-wrap">
-                                                    <span className="d-flex align-items-center">
-                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                        科技鴨嘴獸
-                                                    </span>
-                                                    <GetCertificateName type="LuckyDraw"/>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    憑證介紹敘述憑證介紹敘述<br/>
-                                                    憑證介紹敘述憑證介紹敘述憑證介紹敘述憑證介紹敘述...
-                                                </p>
-                                                <div className="d-flex justify-content-between align-items-end">
-                                                    <span className="card-text"><small className="text-danger fw-bolder">已失效</small></span>
-                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                </div>
+                                        <div className="col-8 align-content-center p-2">
+                                            <h4 className="card-title text-dark d-flex justify-content-between align-items-center mb-1">鴨嘴獸飛行體驗券
+                                            </h4>
+                                            <div className="d-flex justify-content-between flex-wrap">
+                                                <span className="d-flex align-items-center">
+                                                    <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                    科技鴨嘴獸
+                                                </span>
+                                                <GetCertificateName type="Ticket"/>
+                                            </div>
+                                            <p className="card-text my-2">
+                                                憑證介紹敘述憑證介紹敘述 <br />
+                                                憑證介紹敘述憑證介紹敘述憑證介紹敘述 <br />
+                                            </p>
+                                            <div className="d-flex justify-content-between align-items-end">
+                                                <span className="card-text"><small className="text-info fw-bolder">已使用</small></span>
+                                                <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
                                             </div>
                                         </div>
                                     </div>
@@ -549,73 +407,35 @@ function Body(){
                         <div className="col">
                             <div className="card h-100 border-0 shadow">
                                 <Link to ="#" className="text-decoration-none h-100">
-                                    <div className="row g-0">
-                                        <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
-                                                <span className="text-white fs-3">預設圖片</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <h4 className="card-title text-dark d-flex justify-content-between align-items-center text-truncate mb-1">憑證名稱
-                                                </h4>
-                                                <div className="d-flex justify-content-between flex-wrap">
-                                                    <span className="d-flex align-items-center">
-                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                        會員卡名稱
-                                                    </span>
-                                                    <span className="d-inline-flex align-items-center badge rounded-pill bg-primary">
-                                                        <span className="material-symbols-outlined fill-icon fs-6">crop_square</span>
-                                                        ﹡﹡
-                                                    </span>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明說明憑證說明...
-                                                </p>
-                                                <div className="d-flex justify-content-between align-items-end">
-                                                    <span className="card-text"><small className="text-danger fw-bolder">已失效</small></span>
-                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
+                                    <div className="row g-0 h-100">
+                                        <div className="col-4 align-content-center p-2">
+                                            <div className="ratio ratio-1x1">
+                                                <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
+                                                    <span className="text-white fs-3">預設圖片</span>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card h-100 border-0 shadow">
-                                <Link to ="#" className="text-decoration-none h-100">
-                                    <div className="row g-0">
-                                        <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
-                                                <span className="text-white fs-3">預設圖片</span>
+                                        <div className="col-8 align-content-center p-2">
+                                            <h4 className="card-title text-dark d-flex justify-content-between align-items-center text-truncate mb-1">憑證名稱
+                                            </h4>
+                                            <div className="d-flex justify-content-between flex-wrap">
+                                                <span className="d-flex align-items-center">
+                                                    <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                    會員卡名稱
+                                                </span>
+                                                <span className="d-inline-flex align-items-center badge rounded-pill bg-primary">
+                                                    <span className="material-symbols-outlined fill-icon fs-6">crop_square</span>
+                                                    ﹡﹡
+                                                </span>
                                             </div>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <h4 className="card-title text-dark d-flex justify-content-between align-items-center text-truncate mb-1">憑證名稱
-                                                </h4>
-                                                <div className="d-flex justify-content-between flex-wrap">
-                                                    <span className="d-flex align-items-center">
-                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                        會員卡名稱
-                                                    </span>
-                                                    <span className="d-inline-flex align-items-center badge rounded-pill bg-primary">
-                                                        <span className="material-symbols-outlined fill-icon fs-6">crop_square</span>
-                                                        ﹡﹡
-                                                    </span>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明說明憑證說明...
-                                                </p>
-                                                <div className="d-flex justify-content-between align-items-end">
-                                                    <span className="card-text"><small className="text-danger fw-bolder">已失效</small></span>
-                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                </div>
+                                            <p className="card-text my-2">
+                                                憑證說明憑證說明憑證<br/>
+                                                憑證說明憑證說明憑證<br/>
+                                                憑證說明說明憑證說明...
+                                            </p>
+                                            <div className="d-flex justify-content-between align-items-end">
+                                                <span className="card-text"><small className="text-info fw-bolder">已使用</small></span>
+                                                <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
                                             </div>
                                         </div>
                                     </div>
@@ -625,35 +445,67 @@ function Body(){
                         <div className="col">
                             <div className="card h-100 border-0 shadow">
                                 <Link to ="#" className="text-decoration-none h-100">
-                                    <div className="row g-0">
-                                        <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
-                                                <span className="text-white fs-3">預設圖片</span>
+                                    <div className="row g-0 h-100">
+                                        <div className="col-4 align-content-center p-2">
+                                            <div className="ratio ratio-1x1">
+                                                <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
+                                                    <span className="text-white fs-3">預設圖片</span>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <h4 className="card-title text-dark d-flex justify-content-between align-items-center text-truncate mb-1">憑證名稱
-                                                </h4>
-                                                <div className="d-flex justify-content-between flex-wrap">
-                                                    <span className="d-flex align-items-center">
-                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                        會員卡名稱
-                                                    </span>
-                                                    <span className="d-inline-flex align-items-center badge rounded-pill bg-primary">
-                                                        <span className="material-symbols-outlined fill-icon fs-6">crop_square</span>
-                                                        ﹡﹡
-                                                    </span>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明憑證說明憑證<br/>
-                                                    憑證說明說明憑證說明...
-                                                </p>
-                                                <div className="d-flex justify-content-between align-items-end">
-                                                    <span className="card-text"><small className="text-danger fw-bolder">已失效</small></span>
-                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                </div>
+                                        <div className="col-8 align-content-center p-2">
+                                            <h4 className="card-title text-dark d-flex justify-content-between align-items-center text-truncate mb-1">憑證名稱
+                                            </h4>
+                                            <div className="d-flex justify-content-between flex-wrap">
+                                                <span className="d-flex align-items-center">
+                                                    <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                    會員卡名稱
+                                                </span>
+                                                <span className="d-inline-flex align-items-center badge rounded-pill bg-primary">
+                                                    <span className="material-symbols-outlined fill-icon fs-6">crop_square</span>
+                                                    ﹡﹡
+                                                </span>
+                                            </div>
+                                            <p className="card-text my-2">
+                                                憑證說明憑證說明憑證<br/>
+                                                憑證說明憑證說明憑證<br/>
+                                                憑證說明說明憑證說明...
+                                            </p>
+                                            <div className="d-flex justify-content-between align-items-end">
+                                                <span className="card-text"><small className="text-danger fw-bolder">已失效</small></span>
+                                                <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card h-100 border-0 shadow">
+                                <Link to ="#" className="text-decoration-none h-100">
+                                    <div className="row g-0 h-100">
+                                        <div className="col-4 align-content-center p-2">
+                                            <div className="img-wrapper ratio ratio-1x1">
+                                                <img src={base + "images/design_9.jpg"} className="rounded image-grayish" alt="Certificate(鴨嘴獸電子音響) Image"/>
+                                            </div>
+                                        </div>
+                                        <div className="col-8 align-content-center p-2">
+                                            <h4 className="card-title text-dark mb-1">鴨嘴獸電子音響 
+                                            </h4>
+                                            <div className="d-flex justify-content-between flex-wrap">
+                                                <span className="d-flex align-items-center">
+                                                    <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                    科技鴨嘴獸
+                                                </span>
+                                                <GetCertificateName type="LuckyDraw"/>
+                                            </div>
+                                            <p className="card-text my-2">
+                                                憑證介紹敘述憑證介紹敘述<br/>
+                                                憑證介紹敘述憑證介紹敘述憑證介紹敘述憑證介紹敘述...
+                                            </p>
+                                            <div className="d-flex justify-content-between align-items-end">
+                                                <span className="card-text"><small className="text-danger fw-bolder">已失效</small></span>
+                                                <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
                                             </div>
                                         </div>
                                     </div>
@@ -695,7 +547,7 @@ function Body(){
                     <div className="container">
                         <div className="d-flex py-2 mb-3">
                             <div className="border-bottom flex-grow-1 h-50 fs-6">&nbsp;</div>
-                            <h3 className="text-gray text-center pt-1 px-2">尚未持有憑證</h3>
+                            <h3 className="text-gray text-center pt-1 px-2">尚未領取憑證</h3>
                             <div className="border-bottom flex-grow-1 h-50 fs-6">&nbsp;</div>
                         </div>
                         <div className="row justify-content-center">
@@ -715,32 +567,32 @@ function Body(){
                                     <Link to ="#" className="text-decoration-none h-100">
                                         <div className="row g-0 h-100">
                                             <div className="col-4 align-content-center p-2">
-                                                <img src={base + "images/design_15.jpg"} className="image-grayish rounded h-100" style={{objectFit: 'cover'}} alt="Certificate(浣熊金幣) Image"/>
+                                                <div className="img-wrapper ratio ratio-1x1">
+                                                    <img src={base + "images/design_15.jpg"} className="rounded image-grayish" alt="Certificate(浣熊金幣) Image"/>
+                                                </div>
                                             </div>
-                                            <div className="col-8 p-2">
-                                                <div className="d-flex flex-column text-gray h-100">
-                                                    <div className="card-title d-flex justify-content-between align-items-center">
-                                                        <h4 className="text-truncate mb-1">浣熊金幣</h4>
-                                                        <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
-                                                            <span className='min-w-fit-content'>獲取</span>
-                                                            <span className="material-symbols-outlined fs-4">add_box</span>
-                                                        </button>
-                                                    </div>
-                                                    <div className="d-flex justify-content-between flex-wrap">
-                                                        <span className="d-flex align-items-center">
-                                                            <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                            科技鴨嘴獸
-                                                        </span>
-                                                        <GetCertificateName type="Cooperation"/>
-                                                    </div>
-                                                    <p className="card-text flex-grow-1 my-2">
-                                                        憑證介紹敘述憑證介紹敘述 <br />
-                                                        憑證介紹敘述憑證介紹敘述
-                                                    </p>
-                                                    <div className="d-flex justify-content-between align-items-end">
-                                                        <span className="card-text"><small className="text-danger"></small></span>
-                                                        <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                    </div>
+                                            <div className="col-8 align-content-center p-2">
+                                                <div className="card-title d-flex justify-content-between align-items-center">
+                                                    <h4 className="text-truncate mb-1">浣熊金幣</h4>
+                                                    <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                        <span className='min-w-fit-content'>獲取</span>
+                                                        <span className="material-symbols-outlined fs-4">add_box</span>
+                                                    </button>
+                                                </div>
+                                                <div className="d-flex justify-content-between flex-wrap">
+                                                    <span className="d-flex align-items-center">
+                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                        科技鴨嘴獸
+                                                    </span>
+                                                    <GetCertificateName type="Cooperation"/>
+                                                </div>
+                                                <p className="card-text flex-grow-1 my-2">
+                                                    憑證介紹敘述憑證介紹敘述 <br />
+                                                    憑證介紹敘述憑證介紹敘述
+                                                </p>
+                                                <div className="d-flex justify-content-between align-items-end">
+                                                    <span className="card-text"><small className="text-danger"></small></span>
+                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -751,81 +603,35 @@ function Body(){
                                 <div className="card h-100 border-0 shadow-sm">
                                 <Link to ="#" className="text-decoration-none h-100">
                                         <div className="row g-0 h-100">
-                                            <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                                <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
-                                                    <span className="text-gray fs-3">預設圖片</span>
-                                                </div>
-                                            </div>
-                                            <div className="col-8 p-2">
-                                                <div className="d-flex flex-column text-gray h-100">
-                                                    <div className="card-title d-flex justify-content-between align-items-center">
-                                                        <h4 className="text-truncate mb-1">憑證名稱</h4>
-                                                        <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
-                                                            <span className='min-w-fit-content'>獲取</span>
-                                                            <span className="material-symbols-outlined fs-4">add_box</span>
-                                                        </button>
-                                                    </div>
-                                                    <div className="d-flex justify-content-between flex-wrap">
-                                                        <span className="d-flex align-items-center">
-                                                            <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                            會員卡名稱
-                                                        </span>
-                                                        <GetCertificateName type="demo"/>
-                                                    </div>
-                                                    <p className="card-text flex-grow-1 my-2">
-                                                        憑證介紹敘述憑證介紹敘述 <br />
-                                                        憑證介紹敘述憑證介紹敘述
-                                                    </p>
-                                                    <div className="d-flex justify-content-between align-items-end">
-                                                        <span className="card-text"><small className="text-danger"></small></span>
-                                                        <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
+                                            <div className="col-4 align-content-center p-2">
+                                                <div className="ratio ratio-1x1">
+                                                    <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
+                                                        <span className="text-gray fs-3">預設圖片</span>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div className="card h-100 border-0 shadow-sm">
-                                <Link to ="#" className="text-decoration-none h-100">
-                                        <div className="row g-0 h-100">
-                                            <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                                <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
-                                                    <span className="text-gray fs-3">預設圖片</span>
+                                            <div className="col-8 align-content-center p-2">
+                                                <div className="card-title d-flex justify-content-between align-items-center">
+                                                    <h4 className="text-truncate mb-1">憑證名稱</h4>
+                                                    <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                        <span className='min-w-fit-content'>獲取</span>
+                                                        <span className="material-symbols-outlined fs-4">add_box</span>
+                                                    </button>
                                                 </div>
-                                            </div>
-                                            <div className="col-8 p-2">
-                                                <div className="d-flex flex-column text-gray h-100">
-                                                    <div className="card-title d-flex justify-content-between align-items-center">
-                                                        <h4 className="text-truncate mb-1">憑證名稱</h4>
-                                                        <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 fw-bolder lh-1 hover-fill-icon p-0" disabled>
-                                                            <span className='min-w-fit-content'>獲取</span>
-                                                            <span className="material-symbols-outlined fs-4">add_box</span>
-                                                        </button>
-                                                    </div>
-                                                    <div className="d-flex justify-content-between flex-wrap">
-                                                        <span className="d-flex align-items-center">
-                                                            <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                            會員卡名稱
-                                                        </span>
-                                                        <GetCertificateName type="demo"/>
-                                                    </div>
-                                                    <div className='d-flex align-item-center'>
-                                                        <span className='d-sm-inline-block d-none'>尚未擁有，前往</span>
-                                                        <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0 ps-sm-0 ps-4">
-                                                            <span className='min-w-fit-content'>領取會員卡</span>
-                                                            <span className="material-symbols-outlined fs-4">near_me</span>
-                                                        </button>
-                                                    </div>
-                                                    <p className="card-text flex-grow-1 my-2">
-                                                        憑證介紹敘述憑證介紹敘述 <br />
-                                                        憑證介紹敘述憑證介紹敘述
-                                                    </p>
-                                                    <div className="d-flex justify-content-between align-items-end">
-                                                        <span className="card-text"><small className="text-danger"></small></span>
-                                                        <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                    </div>
+                                                <div className="d-flex justify-content-between flex-wrap">
+                                                    <span className="d-flex align-items-center">
+                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                        會員卡名稱
+                                                    </span>
+                                                    <GetCertificateName type="demo"/>
+                                                </div>
+                                                <p className="card-text flex-grow-1 my-2">
+                                                    憑證介紹敘述憑證介紹敘述 <br />
+                                                    憑證介紹敘述憑證介紹敘述
+                                                </p>
+                                                <div className="d-flex justify-content-between align-items-end">
+                                                    <span className="card-text"><small className="text-danger"></small></span>
+                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -836,42 +642,35 @@ function Body(){
                                 <div className="card h-100 border-0 shadow-sm">
                                 <Link to ="#" className="text-decoration-none h-100">
                                         <div className="row g-0 h-100">
-                                            <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                                <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
-                                                    <span className="text-gray fs-3">預設圖片</span>
+                                            <div className="col-4 align-content-center p-2">
+                                                <div className="ratio ratio-1x1">
+                                                    <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
+                                                        <span className="text-gray fs-3">預設圖片</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div className="col-8 p-2">
-                                                <div className="d-flex flex-column text-gray h-100">
-                                                    <div className="card-title d-flex justify-content-between align-items-center">
-                                                        <h4 className="text-truncate mb-1">憑證名稱</h4>
-                                                        <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 fw-bolder lh-1 hover-fill-icon p-0" disabled>
-                                                            <span className='min-w-fit-content'>獲取</span>
-                                                            <span className="material-symbols-outlined fs-4">add_box</span>
-                                                        </button>
-                                                    </div>
-                                                    <div className="d-flex justify-content-between flex-wrap">
-                                                        <span className="d-flex align-items-center">
-                                                            <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                            會員卡名稱
-                                                        </span>
-                                                        <GetCertificateName type="demo"/>
-                                                    </div>
-                                                    <div className='d-flex align-item-center'>
-                                                        <span className='d-sm-inline-block d-none'>尚未擁有，前往</span>
-                                                        <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0 ps-sm-0 ps-4">
-                                                            <span className='min-w-fit-content'>領取會員卡</span>
-                                                            <span className="material-symbols-outlined fs-4">near_me</span>
-                                                        </button>
-                                                    </div>
-                                                    <p className="card-text flex-grow-1 my-2">
-                                                        憑證介紹敘述憑證介紹敘述 <br />
-                                                        憑證介紹敘述憑證介紹敘述
-                                                    </p>
-                                                    <div className="d-flex justify-content-between align-items-end">
-                                                        <span className="card-text"><small className="text-danger"></small></span>
-                                                        <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                    </div>
+                                            <div className="col-8 align-content-center p-2">
+                                                <div className="card-title d-flex justify-content-between align-items-center">
+                                                    <h4 className="text-truncate mb-1">憑證名稱</h4>
+                                                    <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                        <span className='min-w-fit-content'>獲取</span>
+                                                        <span className="material-symbols-outlined fs-4">add_box</span>
+                                                    </button>
+                                                </div>
+                                                <div className="d-flex justify-content-between flex-wrap">
+                                                    <span className="d-flex align-items-center">
+                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                        會員卡名稱
+                                                    </span>
+                                                    <GetCertificateName type="demo"/>
+                                                </div>
+                                                <p className="card-text flex-grow-1 my-2">
+                                                    憑證介紹敘述憑證介紹敘述 <br />
+                                                    憑證介紹敘述憑證介紹敘述
+                                                </p>
+                                                <div className="d-flex justify-content-between align-items-end">
+                                                    <span className="card-text"><small className="text-danger"></small></span>
+                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -882,42 +681,35 @@ function Body(){
                                 <div className="card h-100 border-0 shadow-sm">
                                 <Link to ="#" className="text-decoration-none h-100">
                                         <div className="row g-0 h-100">
-                                            <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                                <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
-                                                    <span className="text-gray fs-3">預設圖片</span>
+                                            <div className="col-4 align-content-center p-2">
+                                                <div className="ratio ratio-1x1">
+                                                    <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
+                                                        <span className="text-gray fs-3">預設圖片</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div className="col-8 p-2">
-                                                <div className="d-flex flex-column text-gray h-100">
-                                                    <div className="card-title d-flex justify-content-between align-items-center">
-                                                        <h4 className="text-truncate mb-1">憑證名稱</h4>
-                                                        <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 fw-bolder lh-1 hover-fill-icon p-0" disabled>
-                                                            <span className='min-w-fit-content'>獲取</span>
-                                                            <span className="material-symbols-outlined fs-4">add_box</span>
-                                                        </button>
-                                                    </div>
-                                                    <div className="d-flex justify-content-between flex-wrap">
-                                                        <span className="d-flex align-items-center">
-                                                            <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                            會員卡名稱
-                                                        </span>
-                                                        <GetCertificateName type="demo"/>
-                                                    </div>
-                                                    <div className='d-flex align-item-center'>
-                                                        <span className='d-sm-inline-block d-none'>尚未擁有，前往</span>
-                                                        <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0 ps-sm-0 ps-4">
-                                                            <span className='min-w-fit-content'>領取會員卡</span>
-                                                            <span className="material-symbols-outlined fs-4">near_me</span>
-                                                        </button>
-                                                    </div>
-                                                    <p className="card-text flex-grow-1 my-2">
-                                                        憑證介紹敘述憑證介紹敘述 <br />
-                                                        憑證介紹敘述憑證介紹敘述
-                                                    </p>
-                                                    <div className="d-flex justify-content-between align-items-end">
-                                                        <span className="card-text"><small className="text-danger"></small></span>
-                                                        <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                    </div>
+                                            <div className="col-8 align-content-center p-2">
+                                                <div className="card-title d-flex justify-content-between align-items-center">
+                                                    <h4 className="text-truncate mb-1">憑證名稱</h4>
+                                                    <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                        <span className='min-w-fit-content'>獲取</span>
+                                                        <span className="material-symbols-outlined fs-4">add_box</span>
+                                                    </button>
+                                                </div>
+                                                <div className="d-flex justify-content-between flex-wrap">
+                                                    <span className="d-flex align-items-center">
+                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                        會員卡名稱
+                                                    </span>
+                                                    <GetCertificateName type="demo"/>
+                                                </div>
+                                                <p className="card-text flex-grow-1 my-2">
+                                                    憑證介紹敘述憑證介紹敘述 <br />
+                                                    憑證介紹敘述憑證介紹敘述
+                                                </p>
+                                                <div className="d-flex justify-content-between align-items-end">
+                                                    <span className="card-text"><small className="text-danger"></small></span>
+                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -928,42 +720,74 @@ function Body(){
                                 <div className="card h-100 border-0 shadow-sm">
                                 <Link to ="#" className="text-decoration-none h-100">
                                         <div className="row g-0 h-100">
-                                            <div className="col-4 d-flex justify-content-center align-items-center p-2">
-                                                <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
-                                                    <span className="text-gray fs-3">預設圖片</span>
+                                            <div className="col-4 align-content-center p-2">
+                                                <div className="ratio ratio-1x1">
+                                                    <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
+                                                        <span className="text-gray fs-3">預設圖片</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div className="col-8 p-2">
-                                                <div className="d-flex flex-column text-gray h-100">
-                                                    <div className="card-title d-flex justify-content-between align-items-center">
-                                                        <h4 className="text-truncate mb-1">憑證名稱</h4>
-                                                        <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 fw-bolder lh-1 hover-fill-icon p-0" disabled>
-                                                            <span className='min-w-fit-content'>獲取</span>
-                                                            <span className="material-symbols-outlined fs-4">add_box</span>
-                                                        </button>
+                                            <div className="col-8 align-content-center p-2">
+                                                <div className="card-title d-flex justify-content-between align-items-center">
+                                                    <h4 className="text-truncate mb-1">憑證名稱</h4>
+                                                    <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                        <span className='min-w-fit-content'>獲取</span>
+                                                        <span className="material-symbols-outlined fs-4">add_box</span>
+                                                    </button>
+                                                </div>
+                                                <div className="d-flex justify-content-between flex-wrap">
+                                                    <span className="d-flex align-items-center">
+                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                        會員卡名稱
+                                                    </span>
+                                                    <GetCertificateName type="demo"/>
+                                                </div>
+                                                <p className="card-text flex-grow-1 my-2">
+                                                    憑證介紹敘述憑證介紹敘述 <br />
+                                                    憑證介紹敘述憑證介紹敘述
+                                                </p>
+                                                <div className="d-flex justify-content-between align-items-end">
+                                                    <span className="card-text"><small className="text-danger"></small></span>
+                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card h-100 border-0 shadow-sm">
+                                <Link to ="#" className="text-decoration-none h-100">
+                                        <div className="row g-0 h-100">
+                                            <div className="col-4 align-content-center p-2">
+                                                <div className="ratio ratio-1x1">
+                                                    <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
+                                                        <span className="text-gray fs-3">預設圖片</span>
                                                     </div>
-                                                    <div className="d-flex justify-content-between flex-wrap">
-                                                        <span className="d-flex align-items-center">
-                                                            <span className="material-symbols-outlined fill-icon">id_card</span>
-                                                            會員卡名稱
-                                                        </span>
-                                                        <GetCertificateName type="demo"/>
-                                                    </div>
-                                                    <div className='d-flex align-item-center'>
-                                                        <span className='d-sm-inline-block d-none'>尚未擁有，前往</span>
-                                                        <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0 ps-sm-0 ps-4">
-                                                            <span className='min-w-fit-content'>領取會員卡</span>
-                                                            <span className="material-symbols-outlined fs-4">near_me</span>
-                                                        </button>
-                                                    </div>
-                                                    <p className="card-text flex-grow-1 my-2">
-                                                        憑證介紹敘述憑證介紹敘述 <br />
-                                                        憑證介紹敘述憑證介紹敘述
-                                                    </p>
-                                                    <div className="d-flex justify-content-between align-items-end">
-                                                        <span className="card-text"><small className="text-danger"></small></span>
-                                                        <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
-                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-8 align-content-center p-2">
+                                                <div className="card-title d-flex justify-content-between align-items-center">
+                                                    <h4 className="text-truncate mb-1">憑證名稱</h4>
+                                                    <button onClick={(e)=>{e.preventDefault(); myfunction("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                        <span className='min-w-fit-content'>獲取</span>
+                                                        <span className="material-symbols-outlined fs-4">add_box</span>
+                                                    </button>
+                                                </div>
+                                                <div className="d-flex justify-content-between flex-wrap">
+                                                    <span className="d-flex align-items-center">
+                                                        <span className="material-symbols-outlined fill-icon">id_card</span>
+                                                        會員卡名稱
+                                                    </span>
+                                                    <GetCertificateName type="demo"/>
+                                                </div>
+                                                <p className="card-text flex-grow-1 my-2">
+                                                    憑證介紹敘述憑證介紹敘述 <br />
+                                                    憑證介紹敘述憑證介紹敘述
+                                                </p>
+                                                <div className="d-flex justify-content-between align-items-end">
+                                                    <span className="card-text"><small className="text-danger"></small></span>
+                                                    <span className="card-text"><small className="text-muted">價值：$﹡﹡﹡</small></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1055,7 +879,7 @@ function Body(){
                                     <div className="row mb-4">
                                         <div className="col">
                                             <h6 className='card-title fw-bold'>發行時間</h6>
-                                            <span className='text-muted'>YYYY/MM/DD HH:MM:SS</span>
+                                            <span className='text-muted'>YYYY/MM/DD HH:MM</span>
                                         </div>
                                         <div className="col">
                                             <h6 className='card-title fw-bold'>參考價格</h6>
@@ -1071,8 +895,9 @@ function Body(){
                                 </div>
                             </div>
                         </div>
-                        <div className="modal-footer border-0 shadow-inset py-0">
-                            <button onClick={(e)=>{e.preventDefault(); myfunction()}} type="button" className="btn btn-sm btn-outline-secondary border-0 d-flex align-items-center gap-1 fw-bolder hover-fill-icon lh-1" >
+                        <div className="modal-footer justify-content-between border-0 shadow-inset py-0">
+                        <span className='text-muted'>領取時間:YYYY/MM/DD <span className='d-sm-inline-block d-none'>HH:MM</span></span>
+                            <button onClick={(e)=>{e.preventDefault(); myfunction()}} type="button" className="btn btn-outline-secondary border-0 d-flex align-items-center gap-1 fw-bolder hover-fill-icon lh-1" >
                                 <span className='border-bottom border-secondary py-1'>領取憑證</span>
                                 <span className="material-symbols-outlined fs-4">add_box</span>
                             </button>
@@ -1134,7 +959,7 @@ function Body(){
                                     <div className="row mb-4">
                                         <div className="col">
                                             <h6 className='card-title fw-bold'>發行時間</h6>
-                                            <span className='text-muted'>YYYY/MM/DD HH:MM:SS</span>
+                                            <span className='text-muted'>YYYY/MM/DD HH:MM</span>
                                         </div>
                                         <div className="col">
                                             <h6 className='card-title fw-bold'>參考價格</h6>
@@ -1157,7 +982,7 @@ function Body(){
                             </div>
                         </div>
                         <div className="modal-footer border-0 shadow-inset py-0">
-                            <button onClick={(e)=>{e.preventDefault(); myfunction()}} type="button" className="btn btn-sm btn-outline-gray border-0 d-flex align-items-center gap-1 fw-bolder hover-fill-icon lh-1" disabled>
+                            <button onClick={(e)=>{e.preventDefault(); myfunction()}} type="button" className="btn btn-outline-gray border-0 d-flex align-items-center gap-1 fw-bolder hover-fill-icon lh-1" disabled>
                                 <span className='border-bottom border-secondary py-1'>領取憑證</span>
                                 <span className="material-symbols-outlined fs-4">add_box</span>
                             </button>
