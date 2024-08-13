@@ -79,10 +79,7 @@ a:hover  .image-grayish{
     min-width: fit-content;
 }
 
-// height:全螢幕
-.h-full-screen{
-    height: 100vh;
-}
+// height
 .overflow-scroll.h-overflow-scroll{
     height: calc(100vh - 3.5rem);
 }

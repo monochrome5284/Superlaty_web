@@ -14,7 +14,7 @@ function ClientCreateMemberProfile(){
     return(
         <>
             <div id="particles-js"><ParticleComponent/></div>
-            <div className="comtainer-fluid d-flex flex-column justify-content-center align-items-center h-full-screen">
+            <div className="container-fluid d-flex flex-column justify-content-center align-items-center vh-100">
                 <div className="card shadow border-0">
                     <div className="card-header bg-transparent border-0 text-center pt-4">
                         <h1 className="fs-3 text-info fw-bold">填寫個人資訊</h1>

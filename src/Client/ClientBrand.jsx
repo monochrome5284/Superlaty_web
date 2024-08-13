@@ -46,7 +46,7 @@ function Body(){
     return(
         <>
             <div className="pt-5" style={{marginTop: '68px'}}>
-                <div className="position-sticky div-sticy-top" style={{zIndex: '1025'}}>
+                <div className="container-fluid position-sticky div-sticy-top" style={{zIndex: '1025'}}>
                     <div className="row align-items-center flex-column">
                         <div className="col-xl-6 col-lg-7 col-md-8 col-10 bg-light rounded shadow p-2 mb-1">
                             <Link to =".collapse" data-bs-toggle="collapse"  aria-expanded="false" aria-controls="multiCollapse">
@@ -70,212 +70,214 @@ function Body(){
                     </div>
                 </div>
                 <div className="bg-light section-shadow-inset pb-3">
-                    <h2 className="fs-2 fw-bold text-center pt-3 py-3 my-3">品牌の會員卡</h2>
-                    <div className="row row-cols-1 row-cols-md-2 row-cols-xxl-3 flex-nowrap overflow-auto scrollbar-none g-3 px-3 pb-5">
-                        <div className="col">
-                            <div className="card h-100 border-0 rounded-0 shadow">
-                                <Link to="#" className="text-decoration-none h-100">
-                                    <div className="row g-0 h-100">
-                                        <div className="col-4 position-relative align-content-center p-2">
-                                            <div className="img-wrapper ratio ratio-1x1">
-                                                <img src={base + "images/design_11.jpg"} className="rounded image-grayish" alt="Membership Card(科技鴨嘴獸) Image"/>
-                                            </div>
-                                            <span class="d-sm-inline-block d-none badge bg-primary position-absolute top-0 start-0 m-3">
-                                                <span>持有</span>
-                                            </span>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <div className="card-title d-flex justify-content-between align-items-center">
-                                                    <h4 className="text-dark text-truncate mb-1">科技鴨嘴獸</h4>
-                                                    <button onClick={(e)=>{e.preventDefault(); navigate("/clientMemberCard");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
-                                                        <span className='min-w-fit-content'>查看</span>
-                                                        <span className="material-symbols-outlined fs-4">near_me</span>
-                                                    </button>
+                    <div className='container-fluid'>
+                        <h2 className="fs-2 fw-bold text-center pt-3 py-3 my-3">品牌の會員卡</h2>
+                        <div className="row row-cols-1 row-cols-md-2 row-cols-xxl-3 flex-nowrap overflow-auto scrollbar-none g-3 px-3 pb-5">
+                            <div className="col">
+                                <div className="card h-100 border-0 rounded-0 shadow">
+                                    <Link to="#" className="text-decoration-none h-100">
+                                        <div className="row g-0 h-100">
+                                            <div className="col-4 position-relative align-content-center p-2">
+                                                <div className="img-wrapper ratio ratio-1x1">
+                                                    <img src={base + "images/design_11.jpg"} className="rounded image-grayish" alt="Membership Card(科技鴨嘴獸) Image"/>
                                                 </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    會員卡說明會員卡說明會員卡說明會員卡說明會員卡說明會員卡說明
-                                                </p>
-                                                <div className="d-flex justify-content-between">
-                                                    <span><small>領取時間：<span className='d-sm-inline-block d-none'>2024/</span>07/15</small></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card h-100 border-0 rounded-0 shadow">
-                                <Link to="#" className="text-decoration-none h-100">
-                                    <div className="row g-0 h-100">
-                                        <div className="col-4 position-relative align-content-center p-2">
-                                            <div className="img-wrapper ratio ratio-1x1">
-                                                <img src={base + "images/design_13.jpg"} className="rounded image-grayish" alt="Membership Card(遊戲boy鴨嘴獸) Image"/>
-                                            </div>
-                                            <span class="d-sm-inline-block d-none badge bg-light text-dark position-absolute top-0 start-0 m-3">
-                                                <span>未領取</span>
-                                            </span>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <div className="card-title d-flex justify-content-between align-items-center">
-                                                    <h4 className="text-dark text-truncate mb-1">遊戲boy鴨嘴獸</h4>
-                                                    <button onClick={(e)=>{e.preventDefault(); navigate("/clientMemberCard");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
-                                                        <span className='min-w-fit-content'>查看</span>
-                                                        <span className="material-symbols-outlined fs-4">near_me</span>
-                                                    </button>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    會員卡說明會員卡說明會員卡說明會員卡說明會員卡說明會員卡說明
-                                                </p>
-                                                <div className="d-flex justify-content-end flex-wrap gap-2">
-                                                    <span><small>剩餘數量：﹡﹡<span className='d-sm-inline-block d-none'>/﹡﹡﹡</span></small></span>
-                                                    <button onClick={(e)=>{e.preventDefault(); myfunction()}} className="btn d-flex align-items-center gap-1 border-0 rounded-0  text-secondary fw-bolder hover-fill-icon  lh-1 p-0">
-                                                        領取
-                                                        <span className="material-symbols-outlined fs-4">add_box</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card h-100 border-0 rounded-0 shadow">
-                            <Link to ="#" className="text-decoration-none h-100">
-                                <div className="row g-0 h-100">
-                                        <div className="col-4 position-relative d-flex justify-content-center align-items-center p-2">
-                                            <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
-                                                <span className="text-white fs-3">預設圖片</span>
-                                                <span class="d-sm-inline-block d-none badge bg-dark position-absolute top-0 start-0 m-3">
+                                                <span class="d-sm-inline-block d-none badge bg-primary position-absolute top-0 start-0 m-3">
                                                     <span>持有</span>
                                                 </span>
                                             </div>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <div className="card-title d-flex justify-content-between align-items-center">
-                                                    <h4 className="text-dark text-truncate mb-1">會員卡名稱</h4>
-                                                    <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
-                                                        <span className='min-w-fit-content'>查看</span>
-                                                        <span className="material-symbols-outlined fs-4">near_me</span>
-                                                    </button>
+                                            <div className="col-8 p-2">
+                                                <div className="d-flex flex-column h-100">
+                                                    <div className="card-title d-flex justify-content-between align-items-center">
+                                                        <h4 className="text-dark text-truncate mb-1">科技鴨嘴獸</h4>
+                                                        <button onClick={(e)=>{e.preventDefault(); navigate("/clientMemberCard");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                            <span className='min-w-fit-content'>查看</span>
+                                                            <span className="material-symbols-outlined fs-4">near_me</span>
+                                                        </button>
+                                                    </div>
+                                                    <p className="card-text flex-grow-1 my-2">
+                                                        會員卡說明會員卡說明會員卡說明會員卡說明會員卡說明會員卡說明
+                                                    </p>
+                                                    <div className="d-flex justify-content-between">
+                                                        <span><small>領取時間：<span className='d-sm-inline-block d-none'>2024/</span>07/15</small></span>
+                                                    </div>
                                                 </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    會員卡介紹敘述會員卡介紹敘述會員卡介紹敘述 <br />
-                                                </p>
-                                                <span><small>領取時間:<span className='d-sm-inline-block d-none'>YYYY/</span>MM/DD</small></span>
                                             </div>
                                         </div>
-                                    </div>
-                                </Link>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col">
-                            <div className="card h-100 border-0 rounded-0 shadow">
-                            <Link to ="#" className="text-decoration-none h-100">
-                                <div className="row g-0 h-100">
-                                        <div className="col-4 position-relative d-flex justify-content-center align-items-center p-2">
-                                            <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
-                                                <span className="text-white fs-3">預設圖片</span>
-                                                <span class="d-sm-inline-block d-none badge bg-dark position-absolute top-0 start-0 m-3">
-                                                    <span>持有</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <div className="card-title d-flex justify-content-between align-items-center">
-                                                    <h4 className="text-dark text-truncate mb-1">會員卡名稱</h4>
-                                                    <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
-                                                        <span className='min-w-fit-content'>查看</span>
-                                                        <span className="material-symbols-outlined fs-4">near_me</span>
-                                                    </button>
+                            <div className="col">
+                                <div className="card h-100 border-0 rounded-0 shadow">
+                                    <Link to="#" className="text-decoration-none h-100">
+                                        <div className="row g-0 h-100">
+                                            <div className="col-4 position-relative align-content-center p-2">
+                                                <div className="img-wrapper ratio ratio-1x1">
+                                                    <img src={base + "images/design_13.jpg"} className="rounded image-grayish" alt="Membership Card(遊戲boy鴨嘴獸) Image"/>
                                                 </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    會員卡介紹敘述會員卡介紹敘述會員卡介紹敘述 <br />
-                                                </p>
-                                                <span><small>領取時間:<span className='d-sm-inline-block d-none'>YYYY/</span>MM/DD</small></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card h-100 border-0 rounded-0 shadow">
-                                <Link to ="#" className="text-decoration-none h-100">
-                                <div className="row g-0 h-100">
-                                        <div className="col-4 position-relative d-flex justify-content-center align-items-center p-2">
-                                            <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
-                                                <span className="text-gray fs-3">預設圖片</span>
-                                                <span class="d-sm-inline-block d-none badge bg-white text-dark position-absolute top-0 start-0 m-3">
+                                                <span class="d-sm-inline-block d-none badge bg-light text-dark position-absolute top-0 start-0 m-3">
                                                     <span>未領取</span>
                                                 </span>
                                             </div>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <div className="card-title d-flex justify-content-between align-items-center">
-                                                    <h4 className="text-dark text-truncate mb-1">會員卡名稱</h4>
-                                                    <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
-                                                        <span className='min-w-fit-content'>查看</span>
-                                                        <span className="material-symbols-outlined fs-4">near_me</span>
-                                                    </button>
-                                                </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    會員卡介紹敘述會員卡介紹敘述會員卡介紹敘述 <br />
-                                                </p>
-                                                <div className="d-flex justify-content-end flex-wrap gap-2">
-                                                    <span><small>剩餘數量：﹡﹡<span className='d-sm-inline-block d-none'>/﹡﹡﹡</span></small></span>
-                                                    <button onClick={(e)=>{e.preventDefault(); myfunction()}} className="btn d-flex align-items-center gap-1 border-0 rounded-0  text-secondary fw-bolder hover-fill-icon  lh-1 p-0">
-                                                        領取
-                                                        <span className="material-symbols-outlined fs-4">add_box</span>
-                                                    </button>
+                                            <div className="col-8 p-2">
+                                                <div className="d-flex flex-column h-100">
+                                                    <div className="card-title d-flex justify-content-between align-items-center">
+                                                        <h4 className="text-dark text-truncate mb-1">遊戲boy鴨嘴獸</h4>
+                                                        <button onClick={(e)=>{e.preventDefault(); navigate("/clientMemberCard");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                            <span className='min-w-fit-content'>查看</span>
+                                                            <span className="material-symbols-outlined fs-4">near_me</span>
+                                                        </button>
+                                                    </div>
+                                                    <p className="card-text flex-grow-1 my-2">
+                                                        會員卡說明會員卡說明會員卡說明會員卡說明會員卡說明會員卡說明
+                                                    </p>
+                                                    <div className="d-flex justify-content-end flex-wrap gap-2">
+                                                        <span><small>剩餘數量：﹡﹡<span className='d-sm-inline-block d-none'>/﹡﹡﹡</span></small></span>
+                                                        <button onClick={(e)=>{e.preventDefault(); myfunction()}} className="btn d-flex align-items-center gap-1 border-0 rounded-0  text-secondary fw-bolder hover-fill-icon  lh-1 p-0">
+                                                            領取
+                                                            <span className="material-symbols-outlined fs-4">add_box</span>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </Link>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col">
-                            <div className="card h-100 border-0 rounded-0 shadow">
+                            <div className="col">
+                                <div className="card h-100 border-0 rounded-0 shadow">
                                 <Link to ="#" className="text-decoration-none h-100">
-                                <div className="row g-0 h-100">
-                                        <div className="col-4 position-relative d-flex justify-content-center align-items-center p-2">
-                                            <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
-                                                <span className="text-gray fs-3">預設圖片</span>
-                                                <span class="d-sm-inline-block d-none badge bg-white text-dark position-absolute top-0 start-0 m-3">
-                                                    <span>未領取</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="col-8 p-2">
-                                            <div className="d-flex flex-column h-100">
-                                                <div className="card-title d-flex justify-content-between align-items-center">
-                                                    <h4 className="text-dark text-truncate mb-1">會員卡名稱</h4>
-                                                    <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
-                                                        <span className='min-w-fit-content'>查看</span>
-                                                        <span className="material-symbols-outlined fs-4">near_me</span>
-                                                    </button>
+                                    <div className="row g-0 h-100">
+                                            <div className="col-4 position-relative d-flex justify-content-center align-items-center p-2">
+                                                <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
+                                                    <span className="text-white fs-3">預設圖片</span>
+                                                    <span class="d-sm-inline-block d-none badge bg-dark position-absolute top-0 start-0 m-3">
+                                                        <span>持有</span>
+                                                    </span>
                                                 </div>
-                                                <p className="card-text flex-grow-1 my-2">
-                                                    會員卡介紹敘述會員卡介紹敘述會員卡介紹敘述 <br />
-                                                </p>
-                                                <div className="d-flex justify-content-end flex-wrap gap-2">
-                                                    <span><small>剩餘數量：﹡﹡<span className='d-sm-inline-block d-none'>/﹡﹡﹡</span></small></span>
-                                                    <button onClick={(e)=>{e.preventDefault(); myfunction()}} className="btn d-flex align-items-center gap-1 border-0 rounded-0  text-secondary fw-bolder hover-fill-icon  lh-1 p-0">
-                                                        領取
-                                                        <span className="material-symbols-outlined fs-4">add_box</span>
-                                                    </button>
+                                            </div>
+                                            <div className="col-8 p-2">
+                                                <div className="d-flex flex-column h-100">
+                                                    <div className="card-title d-flex justify-content-between align-items-center">
+                                                        <h4 className="text-dark text-truncate mb-1">會員卡名稱</h4>
+                                                        <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                            <span className='min-w-fit-content'>查看</span>
+                                                            <span className="material-symbols-outlined fs-4">near_me</span>
+                                                        </button>
+                                                    </div>
+                                                    <p className="card-text flex-grow-1 my-2">
+                                                        會員卡介紹敘述會員卡介紹敘述會員卡介紹敘述 <br />
+                                                    </p>
+                                                    <span><small>領取時間:<span className='d-sm-inline-block d-none'>YYYY/</span>MM/DD</small></span>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </Link>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card h-100 border-0 rounded-0 shadow">
+                                <Link to ="#" className="text-decoration-none h-100">
+                                    <div className="row g-0 h-100">
+                                            <div className="col-4 position-relative d-flex justify-content-center align-items-center p-2">
+                                                <div className="d-flex justify-content-center align-items-center bg-primary rounded w-100 h-100">
+                                                    <span className="text-white fs-3">預設圖片</span>
+                                                    <span class="d-sm-inline-block d-none badge bg-dark position-absolute top-0 start-0 m-3">
+                                                        <span>持有</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div className="col-8 p-2">
+                                                <div className="d-flex flex-column h-100">
+                                                    <div className="card-title d-flex justify-content-between align-items-center">
+                                                        <h4 className="text-dark text-truncate mb-1">會員卡名稱</h4>
+                                                        <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                            <span className='min-w-fit-content'>查看</span>
+                                                            <span className="material-symbols-outlined fs-4">near_me</span>
+                                                        </button>
+                                                    </div>
+                                                    <p className="card-text flex-grow-1 my-2">
+                                                        會員卡介紹敘述會員卡介紹敘述會員卡介紹敘述 <br />
+                                                    </p>
+                                                    <span><small>領取時間:<span className='d-sm-inline-block d-none'>YYYY/</span>MM/DD</small></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card h-100 border-0 rounded-0 shadow">
+                                    <Link to ="#" className="text-decoration-none h-100">
+                                    <div className="row g-0 h-100">
+                                            <div className="col-4 position-relative d-flex justify-content-center align-items-center p-2">
+                                                <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
+                                                    <span className="text-gray fs-3">預設圖片</span>
+                                                    <span class="d-sm-inline-block d-none badge bg-white text-dark position-absolute top-0 start-0 m-3">
+                                                        <span>未領取</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div className="col-8 p-2">
+                                                <div className="d-flex flex-column h-100">
+                                                    <div className="card-title d-flex justify-content-between align-items-center">
+                                                        <h4 className="text-dark text-truncate mb-1">會員卡名稱</h4>
+                                                        <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                            <span className='min-w-fit-content'>查看</span>
+                                                            <span className="material-symbols-outlined fs-4">near_me</span>
+                                                        </button>
+                                                    </div>
+                                                    <p className="card-text flex-grow-1 my-2">
+                                                        會員卡介紹敘述會員卡介紹敘述會員卡介紹敘述 <br />
+                                                    </p>
+                                                    <div className="d-flex justify-content-end flex-wrap gap-2">
+                                                        <span><small>剩餘數量：﹡﹡<span className='d-sm-inline-block d-none'>/﹡﹡﹡</span></small></span>
+                                                        <button onClick={(e)=>{e.preventDefault(); myfunction()}} className="btn d-flex align-items-center gap-1 border-0 rounded-0  text-secondary fw-bolder hover-fill-icon  lh-1 p-0">
+                                                            領取
+                                                            <span className="material-symbols-outlined fs-4">add_box</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="card h-100 border-0 rounded-0 shadow">
+                                    <Link to ="#" className="text-decoration-none h-100">
+                                    <div className="row g-0 h-100">
+                                            <div className="col-4 position-relative d-flex justify-content-center align-items-center p-2">
+                                                <div className="d-flex justify-content-center align-items-center bg-light rounded w-100 h-100">
+                                                    <span className="text-gray fs-3">預設圖片</span>
+                                                    <span class="d-sm-inline-block d-none badge bg-white text-dark position-absolute top-0 start-0 m-3">
+                                                        <span>未領取</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div className="col-8 p-2">
+                                                <div className="d-flex flex-column h-100">
+                                                    <div className="card-title d-flex justify-content-between align-items-center">
+                                                        <h4 className="text-dark text-truncate mb-1">會員卡名稱</h4>
+                                                        <button onClick={(e)=>{e.preventDefault(); navigate("#");}} className="btn d-inline-flex align-items-center border-0 rounded-0 text-info fw-bolder lh-1 hover-fill-icon p-0">
+                                                            <span className='min-w-fit-content'>查看</span>
+                                                            <span className="material-symbols-outlined fs-4">near_me</span>
+                                                        </button>
+                                                    </div>
+                                                    <p className="card-text flex-grow-1 my-2">
+                                                        會員卡介紹敘述會員卡介紹敘述會員卡介紹敘述 <br />
+                                                    </p>
+                                                    <div className="d-flex justify-content-end flex-wrap gap-2">
+                                                        <span><small>剩餘數量：﹡﹡<span className='d-sm-inline-block d-none'>/﹡﹡﹡</span></small></span>
+                                                        <button onClick={(e)=>{e.preventDefault(); myfunction()}} className="btn d-flex align-items-center gap-1 border-0 rounded-0  text-secondary fw-bolder hover-fill-icon  lh-1 p-0">
+                                                            領取
+                                                            <span className="material-symbols-outlined fs-4">add_box</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>

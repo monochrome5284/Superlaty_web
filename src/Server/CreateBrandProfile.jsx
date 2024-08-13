@@ -32,7 +32,7 @@ function CreateBrandProfile(){
         setUploadedFileURL(URL.createObjectURL(e.target.files[0]));
     }
     return(
-        <div className="comtainer-fluid d-flex justify-content-center align-items-center position-relative bg-img-cover bg-image-animation-bottomToTop px-3 h-full-screen" style={{backgroundImage: `url(${base}images/logIn-background-img.jpg)`}}>
+        <div className="container-fluid d-flex justify-content-center align-items-center position-relative bg-img-cover bg-image-animation-bottomToTop px-3 vh-100" style={{backgroundImage: `url(${base}images/logIn-background-img.jpg)`}}>
                 <div className="position-absolute top-0 start-0 ms-5 mt-3">
                     <h1 className="font-family-OleoScript display-1 text-white">Superlaty</h1>
                 </div>

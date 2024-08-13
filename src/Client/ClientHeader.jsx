@@ -9,7 +9,7 @@ function ClientHeader(params) {
       <nav className ="navbar navbar-light bg-light navbar-expand-lg fixed-top fs-5 shadow-lg">
       <div className ="container-fluid">
           <Link to ="/clientHome" className ="navbar-brand font-family-OleoScript d-inline-flex align-items-center gap-2 me-5" >
-              <img src={base + "images/Superlaty_LOGO.jpg"} alt="" width="48" height="48" className ="d-inline-block align-text-top img-circle"/>
+              <img src={base + "images/Superlaty_LOGO_NObg.png"} alt="" width="48" height="48" className ="d-inline-block align-text-top img-circle"/>
               Superlaty
           </Link>
           <button className ="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -43,10 +43,10 @@ function ClientHeader(params) {
                           </a>
                       </li>
                       <li className ="nav-item">
-                          <a className ="nav-link d-inline-flex align-items-center gap-1" aria-current="page" >
+                          <Link to ="/clientCommunityPage" className ="nav-link d-inline-flex align-items-center gap-1" aria-current="page" >
                               <span className ="material-symbols-outlined">group</span>
                               會員社群
-                          </a>
+                          </Link>
                       </li>
                       <li className ="nav-item">
                           <a className ="nav-link d-inline-flex align-items-center gap-1" aria-current="page" >

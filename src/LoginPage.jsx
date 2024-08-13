@@ -36,7 +36,7 @@ export default function Login() {
   let location = useLocation();
   if(location.state === "server"){
     return (
-      <div className="comtainer-fluid d-flex flex-column justify-content-center align-items-center position-relative bg-img-cover bg-image-animation-bottomToTop" style={{ backgroundImage: `url(${base}images/logIn-background-img.jpg)`, height: "100vh" }}>
+      <div className="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center position-relative bg-img-cover bg-image-animation-bottomToTop" style={{ backgroundImage: `url(${base}images/logIn-background-img.jpg)`}}>
         <div className="position-absolute top-0 start-0 ms-5 mt-3">
           <h1 className="font-family-OleoScript display-1 text-white">Superlaty</h1>
         </div>
@@ -52,7 +52,7 @@ export default function Login() {
       <>
         <div id="particles-js"><ParticleComponent/></div>
 
-        <div className="comtainer-fluid d-flex flex-column justify-content-center align-items-center position-relative h-full-screen px-3">
+        <div className="container-fluid d-flex flex-column justify-content-center align-items-center position-relative vh-100 px-3">
 
           <div className="position-absolute top-0 start-0 ms-5 mt-3">
               <h1 className="font-family-OleoScript display-1 text-secondary">Superlaty</h1>

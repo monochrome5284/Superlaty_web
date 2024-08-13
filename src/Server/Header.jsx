@@ -8,8 +8,8 @@ function Header(params) {
     <>
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top bg-primary fs-5">
             <div className="container-fluid">
-                <Link to="/home" className="navbar-brand font-family-OleoScript d-inline-flex align-items-center me-5">
-                    <img src={base + "images/Superlaty_LOGO.jpg"} alt="" width="48" height="48" className="d-inline-block align-text-top"></img>
+                <Link to="/home" className="navbar-brand font-family-OleoScript d-inline-flex gap-2 align-items-center me-5">
+                    <img src={base + "images/Superlaty_LOGO_NObg.png"} alt="" width="48" height="48" className="d-inline-block align-text-top"></img>
                     Superlaty
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

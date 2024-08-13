@@ -6,12 +6,12 @@ let base = import.meta.env.VITE_BASE_URL || "../";
 
 export default function PreLogin() {
     return(
-        <div className="comtainer-fluid">
+        <div className="container-fluid">
         <div className="row">
-            <div className="col-sm-6 bg-primary h-full-screen position-relative">
+            <div className="col col-md-6 bg-primary vh-100 position-relative">
                 <div className="position-absolute top-0 start-50 translate-middle-x mt-5" style={{width: "80%"}}>
-                    <div className="d-inline-flex justify-content-star align-items-center">
-                        <img src={base + "images/Superlaty_LOGO.jpg"} alt="Superlaty Logo Image" width="96" height="96"/>
+                    <div className="d-inline-flex justify-content-star align-items-center gap-2 mb-3">
+                        <img src={base + "images/Superlaty_LOGO_NObg.png"} alt="Superlaty Logo Image" height="48"/>
                         <span className="text-white fs-1 font-family-OleoScript">Superlaty</span>
                     </div>
                     <p className="fs-4 text-white font-family-TiroBangla" style={{marginTop: "-1rem"}}>Connect The Next Generation Membership</p>
@@ -30,7 +30,7 @@ export default function PreLogin() {
                     </Link>
                 </div>
             </div>
-            <div className="col-sm-6 d-sm-block d-none bg-img-cover h-full-screen" style={{backgroundImage: `url(${base}images/tool_img1.jpg)`}}>
+            <div className="col col-md-6 d-md-block d-none bg-img-cover vh-100" style={{backgroundImage: `url(${base}images/tool_img1.jpg)`}}>
             </div>
         </div>
     </div>

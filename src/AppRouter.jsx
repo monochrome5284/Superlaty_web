@@ -22,6 +22,7 @@ import BrandInfo from './Server/BrandInfo.jsx';
 import CreateBrandProfile from './Server/CreateBrandProfile.jsx';
 import ClientBrand from './Client/ClientBrand.jsx';
 import ClientMemberCard from './Client/ClientMemberCard.jsx';
+import ClientCommunityPage from './Client/ClientCommunityPage.jsx';
 import {
   BrowserRouter as Router,
   Routes,
@@ -57,8 +58,9 @@ export default function AppRouter() {
           <Route element={<IssuedTicket/>} path={'/issuedTicket'}></Route>
           <Route element={<BrandInfo/>} path={'/brandInfo'}></Route>
           <Route element={<CreateBrandProfile/>} path={'/createBrandProfile'}></Route>
-          <Route element={<MemberList/>} path={'memberList/'}></Route>
-          <Route element={<ClientMemberCard/>} path={'ClientMemberCard/'}></Route>
+          <Route element={<MemberList/>} path={'/memberList'}></Route>
+          <Route element={<ClientMemberCard/>} path={'/clientMemberCard'}></Route>
+          <Route element={<ClientCommunityPage/>} path={'/clientCommunityPage'}></Route>
 
           <Route element={<ClientCreateMemberProfile/>} path={'/clientCreateMemberProfile'}></Route>
           <Route element={<ClientAssets/>} path={'/clientHome'}></Route>
